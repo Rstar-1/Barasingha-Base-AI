@@ -1,0 +1,374 @@
+/* ======================= Start-Color ======================= */
+$primary: #ff475b !important;
+$secondary: #335080 !important;
+$tertiary: #f2f2f2 !important;
+$forth: #212529 !important;
+$success: #4bb543 !important;
+$warning: #ff5722 !important;
+$danger: red !important;
+$info: #2196f3 !important;
+$white: #fff !important;
+$dark: #000 !important;
+$gray: gray !important;
+/* ======================= End-Color ======================= */
+
+/* ======================= Start-Bg-Color ======================= */
+.bgprimary {
+  background: $primary;
+}
+.bgsecondary {
+  background: $secondary;
+}
+.bgtertiary {
+  background: $tertiary;
+}
+.bgforth {
+  background: $forth;
+}
+.bgsuccess {
+  background: $success;
+}
+.bgwarning {
+  background: $warning;
+}
+.bgdanger {
+  background: $danger;
+}
+.bginfo {
+  background: $info;
+}
+.bgwhite {
+  background: $white;
+}
+.bggray {
+  background: $gray;
+}
+.bgdark {
+  background: $dark;
+}
+.bg-ec {
+  background-color: #ececec !important;
+}
+.bg-purple {
+  background-color: #6610f2 !important;
+}
+.bg-blues {
+  background-color: #000940 !important;
+}
+.bg-glass {
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+.liner-color {
+  background: linear-gradient(#e66465, #9198e5) !important;
+}
+.liner-color2 {
+  background: linear-gradient(0.25turn, #3f87a6, #f69d3c);
+}
+/* ======================= End-Bg-Color ======================= */
+
+/* ======================= Start-Text-Color ======================= */
+.textprimary {
+  color: $primary;
+}
+.textsecondary {
+  color: $secondary;
+}
+.texttertiary {
+  color: $tertiary;
+}
+.textforth {
+  color: $forth;
+}
+.textsuccess {
+  color: $success;
+}
+.textwarning {
+  color: $warning;
+}
+.textdanger {
+  color: $danger;
+}
+.textinfo {
+  color: $info;
+}
+.textwhite {
+  color: $white;
+}
+.textgray {
+  color: $gray;
+}
+.textdark {
+  color: $dark;
+}
+/* ======================= End-Text-Color ======================= */
+
+/* ======================= Start-Font-Family ======================= */
+@font-face {
+  font-family: "poppins-regular";
+  src: local("poppins-regular"),
+    url("../fonts/Poppins/Poppins-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "poppins-regular" !important;
+}
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+li {
+  font-family: "poppins-regular" !important;
+}
+/* ======================= End-Font-Family ======================= */
+
+/* ======================= Start-Navbar ======================= */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary;
+}
+/* ======================= End-Navbar ======================= */
+
+/* ======================= Start-Button ======================= */
+.bgp-outline {
+  background: transparent !important;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+}
+.bgp-outline:hover {
+  background: #fff !important;
+  color: #222 !important;
+}
+/* ======================= End-Button ======================= */
+
+/* ======================= Start-Navbar ======================= */
+/////////////////
+/* ======================= End-Navbar ======================= */
+
+/* ======================= Start-home ======================= */
+.h-ban{
+  height: 91vh !important;
+}
+/* ======================= End-home ======================= */
+
+/* ======================= Start-arc ======================= */
+.reactor-container{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border: 1px dashed #888;
+    position: relative;
+    border-radius: 50%;
+    background-color: #384c50;
+    border: 1px solid rgb(18,20,20);
+    box-shadow: 0px 0px 32px 8px rgb(18,20,20), 0px 0px 4px 1px rgb(18,20,20) inset;
+}
+.reactor-container-inner{
+    height: 238px;
+    width: 238px;
+    background-color: rgb(22,26,27);
+    box-shadow: 0px 0px 4px 1px #52FEFE;
+}
+.circle{
+    border-radius: 50%;
+}
+.abs-center{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.core-inner{
+    width: 70px;
+    height: 70px;
+    border: 5px solid #1B4E5F;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 7px 5px #52FEFE, 0px 0px 10px 10px #52FEFE inset;
+}
+.core-outer{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #52FEFE;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 2px 1px #52FEFE, 0px 0px 10px 5px #52FEFE inset;
+}
+.core-wrapper{
+    width: 180px;
+    height: 180px;
+    background-color: #073c4b;
+    box-shadow: 0px 0px 5px 4px #52FEFE, 0px 0px 6px 2px #52FEFE inset;
+}
+.tunnel{
+    width: 220px;
+    height: 220px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px 1px #52FEFE, 0px 0px 5px 4px #52FEFE inset;
+}
+.coil-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: 3s infinite linear reactor-anim;
+}
+.coil{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: calc(50% - 110px);
+    left: calc(50% - 15px);
+    transform-origin: 15px 110px;
+    background-color: #073c4b;
+    box-shadow: 0px 0px 5px #53FEFE inset;
+}
+.coil-1{
+    transform: rotate(0deg);
+}
+.coil-2{
+    transform: rotate(45deg);
+}
+.coil-3{
+    transform: rotate(90deg);
+}
+.coil-4{
+    transform: rotate(135deg);
+}
+.coil-5{
+    transform: rotate(180deg);
+}
+.coil-6{
+    transform: rotate(225deg);
+}
+.coil-7{
+    transform: rotate(270deg);
+}
+.coil-8{
+    transform: rotate(315deg);
+}
+@keyframes reactor-anim{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* ======================= End-arc ======================= */
+
+/* ======================= Start-Maincss ======================= */
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+}
+p{
+  margin: 0px;
+  padding: 0px;
+}
+.list-none {
+  list-style: none !important;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+.error-h{
+  height: 100vh !important;
+  @media (max-width:640px) {
+    height: 60vh !important;
+  }
+}
+.up-box{
+  width: 50px !important;
+  height: 50px !important;
+  @media (max-width:640px) {
+    width: 40px !important;
+  height: 40px !important;
+  }
+}
+.up-img{
+  width: 25px !important;
+  height: 25px !important;
+  @media (max-width:640px) {
+    width: 20px !important;
+  height: 20px !important;
+  }
+}
+.z-999 {
+  z-index: 9999 !important;
+}
+.h-100 {
+  height: 100vh !important;
+}
+.disc {
+  list-style: decimal !important;
+}
+.dot {
+  width: 12px !important;
+  height: 12px !important;
+}
+.border-0 {
+  border: none !important;
+}
+.border-ec {
+  border: 1px solid #ececec !important;
+}
+.center-absolute {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+.input-css {
+  border: 1px solid #ececec !important;
+  height: 38px !important;
+  border-radius: 6px !important;
+  padding-left: 12px !important;
+}
+/* ======================= End-Maincss ======================= */
+
+/* ======================= Start-Animatedcss ======================= */
+.marquee p {
+  transform: translateX(100%);
+  animation: scroll-left 10s linear infinite;
+}
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+.clip {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%) !important;
+}
+.rotate-d {
+  transform: rotate(20deg) !important;
+}
+/* ======================= End-Animatedcss ======================= */
+
+

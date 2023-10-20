@@ -3,7 +3,7 @@ import FeatherIcon from "feather-icons-react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [ sidebarshow, setsidebarshow ] = useState(false);
+  const [sidebarshow, setsidebarshow] = useState(false);
   const NavMenu = [
     {
       icon: "home",
@@ -33,7 +33,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full bgforth">
       {sidebarshow ? (
         <div className="bg-glass fixed hidden h-100 sm-block w-full z-99">
           <div className="bgwhite w-90 h-100 absolute right-0 top-0">
@@ -76,15 +76,15 @@ const Navbar = () => {
       ) : null}
       <div className="flex justify-between items-center container mx-auto">
         <div className="logo">
-          <h1 className="fsize21 sm-mtpx1 sm-mbpx1 font-900 textprimary">
-            Bara<span className="textsecondary mlpx2">Singha</span>
+          <h1 className="fsize21 sm-mtpx1 sm-mbpx1 font-900 textwhite">
+            Rstar
           </h1>
         </div>
-        <div className="flex gap-5 plpx20 sm-plpx1 items-center justify-end menu sm-hidden">
+        <div className="flex gap-5 items-center justify-end menu sm-hidden">
           {NavMenu.map((e) => (
             <>
-              <NavLink activeClass="textprimary" to={e.route}>
-                <p className="fsize16 textdark mlpx28 cursor-pointer font-500">
+              <NavLink activeClasses="textprimary" to={e.route}>
+                <p className="fsize14 textwhite mlpx28 cursor-pointer font-500">
                   {e.name}
                 </p>
               </NavLink>
@@ -102,7 +102,7 @@ const Navbar = () => {
         </div>
         <div className="navbtn flex gap-9 justify-end">
           <button className="bgprimary border-0 fsize15 font-500 cursor-pointer textwhite plpx30 prpx30 ptpx8 pbpx8 rounded-20">
-            Login
+            START
           </button>
         </div>
       </div>

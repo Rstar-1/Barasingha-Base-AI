@@ -2,7 +2,7 @@
 $primary: #ff475b !important;
 $secondary: #335080 !important;
 $tertiary: #f2f2f2 !important;
-$forth: #212529 !important;
+$forth: #070e18 !important;
 $success: #4bb543 !important;
 $warning: #ff5722 !important;
 $danger: red !important;
@@ -57,7 +57,7 @@ $gray: gray !important;
 }
 .bg-glass {
   background: rgba(255, 255, 255, 0.09);
-  border-radius: 16px;
+  border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.2px);
   border: 1px solid rgba(255, 255, 255, 0.13);
@@ -134,15 +134,7 @@ li {
 
 /* ======================= Start-Navbar ======================= */
 ::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-  background: $primary;
+  width: 0px;
 }
 /* ======================= End-Navbar ======================= */
 
@@ -165,6 +157,44 @@ li {
 /* ======================= Start-home ======================= */
 .h-ban{
   height: 91vh !important;
+}
+.bg-circle{
+  background: #444 !important;
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.margin-minus{
+  margin-top: -40px !important;
+}
+.margin-leftmin{
+  margin-left: -20px !important;
+}
+.h-bara{
+  height: 300px !important;
+}
+.bg-time{
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.bg-date{
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.h-note{
+  height: 200px !important;
+  overflow-y: auto !important;
 }
 /* ======================= End-home ======================= */
 
@@ -320,8 +350,11 @@ p{
 .h-100 {
   height: 100vh !important;
 }
-.disc {
+.decimal {
   list-style: decimal !important;
+}
+.disc {
+  list-style: disc !important;
 }
 .dot {
   width: 12px !important;
@@ -329,6 +362,12 @@ p{
 }
 .border-0 {
   border: none !important;
+}
+.border-ec {
+  border: 1px solid #ececec !important;
+}
+.bordb {
+  border-bottom: 1px solid #ececec !important;
 }
 .border-ec {
   border: 1px solid #ececec !important;

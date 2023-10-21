@@ -65,7 +65,7 @@ const Home = () => {
         </div>
         <div className="w-30 plpx40">
           <div className="bgsecondary rounded-5 p15">
-            <p className="fsize15 textwhite">Note</p>
+            <p className="fsize15 text-center texttertiary">Barasingha AI</p>
           </div>
           <div className="bg-glass p15 mtpx90">
             <div className="bordb p6">

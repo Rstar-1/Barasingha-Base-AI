@@ -57,7 +57,6 @@ $gray: gray !important;
 }
 .bg-glass {
   background: rgba(255, 255, 255, 0.09);
-  border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.2px);
   border: 1px solid rgba(255, 255, 255, 0.13);
@@ -198,6 +197,42 @@ li {
 }
 /* ======================= End-home ======================= */
 
+/* ======================= Start-websites ======================= */
+.h-website{
+  width: 100% !important;
+  height: 200px !important;
+}
+.cardwebsites{
+  width: 100% !important;
+  height: 71vh !important;
+  overflow-y: auto !important;
+}
+/* ======================= End-websites ======================= */
+
+/* ======================= Start-gallery ======================= */
+.h-gallery{
+  width: 100% !important;
+  height: 200px !important;
+}
+.cardgallery{
+  width: 100% !important;
+  height: 71vh !important;
+  overflow-y: auto !important;
+}
+/* ======================= End-gallery ======================= */
+
+/* ======================= Start-hardware ======================= */
+.h-hardware{
+  width: 100% !important;
+  height: 200px !important;
+}
+.cardhardware{
+  width: 100% !important;
+  height: 71vh !important;
+  overflow-y: auto !important;
+}
+/* ======================= End-hardware ======================= */
+
 /* ======================= Start-loader ======================= */
 .loader {
   border: 2px solid transparent;
@@ -215,11 +250,15 @@ li {
   border-bottom: 2px solid $tertiary;
   width: 70px;
   height: 70px;
-  animation: spin 2s linear infinite;
+  animation: spins 2s linear infinite;
 }
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+@keyframes spins {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
 }
 /* ======================= End-loader ======================= */
 
@@ -348,7 +387,7 @@ p{
   cursor: pointer !important;
 }
 .error-h{
-  height: 100vh !important;
+  height: 90vh !important;
   @media (max-width:640px) {
     height: 60vh !important;
   }

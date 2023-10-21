@@ -12,13 +12,13 @@ const Navbar = () => {
     },
     {
       icon: "user",
-      name: "About Us",
-      route: "about",
+      name: "Website",
+      route: "website",
     },
     {
       icon: "settings",
-      name: "Service",
-      route: "service",
+      name: "Hardware",
+      route: "hardware",
     },
     {
       icon: "grid",
@@ -27,7 +27,7 @@ const Navbar = () => {
     },
     {
       icon: "phone-call",
-      name: "Connect Us",
+      name: "Sections",
       route: "connect",
     },
   ];
@@ -84,7 +84,7 @@ const Navbar = () => {
           {NavMenu.map((e) => (
             <>
               <NavLink activeClasses="textprimary" to={e.route}>
-                <p className="fsize14 textwhite mlpx28 cursor-pointer font-500">
+                <p className="fsize13 textwhite mlpx28 cursor-pointer font-500">
                   {e.name}
                 </p>
               </NavLink>
@@ -101,7 +101,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbtn flex gap-9 justify-end">
-          <button className="bgprimary border-0 fsize15 font-500 cursor-pointer textwhite plpx30 prpx30 ptpx8 pbpx8 rounded-20">
+          <button className="bgsecondary border-0 fsize13 font-500 cursor-pointer texttertiary plpx30 prpx30 ptpx8 pbpx8 rounded-20">
             START
           </button>
         </div>

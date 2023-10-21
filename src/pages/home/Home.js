@@ -8,11 +8,17 @@ const Home = () => {
       <div className="flex container mx-auto items-center h-ban">
         <div className="w-30">
           <div className="flex justify-center">
-            <div className="bg-time bg-glass z-50">
-              <FeatherIcon icon="close" className="textwhite" />
+            <div className="bg-time bgsecondary z-50 relative">
+              <div class="loader"></div>
+              <div className="absolute">
+                <p className="texttertiary fsize13">09:12</p>
+              </div>
             </div>
             <div className="bg-date bg-glass mtpx70 margin-leftmin">
-              <FeatherIcon icon="close" className="textwhite" />
+              <div class="loader2"></div>
+              <div className="absolute">
+                <p className="texttertiary fsize13">09:12</p>
+              </div>
             </div>
           </div>
           <img
@@ -41,29 +47,29 @@ const Home = () => {
           </div>
           <div className="flex justify-between w-full">
             <div className="bg-circle margin-minus">
-              <FeatherIcon icon="close" className="textwhite" />
+              <FeatherIcon icon="command" className="texttertiary" />
             </div>
             <div className="bg-circle mtpx20">
-              <FeatherIcon icon="close" className="textwhite" />
+              <FeatherIcon icon="trending-up" className="texttertiary" />
             </div>
             <div className="bg-circle mtpx50">
-              <FeatherIcon icon="close" className="textwhite" />
+              <FeatherIcon icon="life-buoy" className="texttertiary" />
             </div>
             <div className="bg-circle mtpx20">
-              <FeatherIcon icon="close" className="textwhite" />
+              <FeatherIcon icon="music" className="texttertiary" />
             </div>
             <div className="bg-circle margin-minus">
-              <FeatherIcon icon="close" className="textwhite" />
+              <FeatherIcon icon="slack" className="texttertiary" />
             </div>
           </div>
         </div>
         <div className="w-30 plpx40">
-          <div className="bg-glass p15">
+          <div className="bgsecondary rounded-5 p15">
             <p className="fsize15 textwhite">Note</p>
           </div>
           <div className="bg-glass p15 mtpx90">
             <div className="bordb p6">
-              <p className="fsize15 textwhite">Note</p>
+              <p className="fsize15 texttertiary">Note</p>
             </div>
             <div className="h-note">
               <ul>

@@ -1,7 +1,7 @@
 /* ======================= Start-Color ======================= */
 $primary: #ff475b !important;
-$secondary: #335080 !important;
-$tertiary: #f2f2f2 !important;
+$secondary: #384c50 !important;
+$tertiary: #52FEFE !important;
 $forth: #070e18 !important;
 $success: #4bb543 !important;
 $warning: #ff5722 !important;
@@ -159,7 +159,7 @@ li {
   height: 91vh !important;
 }
 .bg-circle{
-  background: #444 !important;
+  background: #384c50 !important;
   width: 70px !important;
   height: 70px !important;
   border-radius: 50% !important;
@@ -197,6 +197,31 @@ li {
   overflow-y: auto !important;
 }
 /* ======================= End-home ======================= */
+
+/* ======================= Start-loader ======================= */
+.loader {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top: 2px solid $tertiary;
+  border-bottom: 2px solid $tertiary;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+.loader2 {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top: 2px solid $tertiary;
+  border-bottom: 2px solid $tertiary;
+  width: 70px;
+  height: 70px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* ======================= End-loader ======================= */
 
 /* ======================= Start-arc ======================= */
 .reactor-container{

@@ -67,24 +67,24 @@ const Home = () => {
           <div className="bgsecondary rounded-5 p15">
             <p className="fsize15 text-center texttertiary">Barasingha AI</p>
           </div>
-          <div className="bg-glass p15 mtpx90">
+          <div className="bg-glass rounded-5 p15 mtpx90">
             <div className="bordb p6">
               <p className="fsize15 texttertiary">Note</p>
             </div>
             <div className="h-note">
               <ul>
-                <li className="disc textwhite mtpx5">ds</li>
-                <li className="disc textwhite mtpx5">ds</li>
-                <li className="disc textwhite mtpx5">ds</li>
-                <li className="disc textwhite mtpx5">ds</li>
-                <li className="disc textwhite mtpx5">ds</li>
-                <li className="disc textwhite mtpx5">ds</li>
-                <li className="disc textwhite mtpx5">ds</li>
-                <li className="disc textwhite mtpx5">ds</li>
-                <li className="disc textwhite mtpx5">ds</li>
-                <li className="disc textwhite mtpx5">ds</li>
-                <li className="disc textwhite mtpx5">ds</li>
-                <li className="disc textwhite mtpx5">ds</li>
+                <li className="disc textwhite fsize14 font-200 mtpx5">ds</li>
+                <li className="disc textwhite fsize14 font-200 mtpx5">ds</li>
+                <li className="disc textwhite fsize14 font-200 mtpx5">ds</li>
+                <li className="disc textwhite fsize14 font-200 mtpx5">ds</li>
+                <li className="disc textwhite fsize14 font-200 mtpx5">ds</li>
+                <li className="disc textwhite fsize14 font-200 mtpx5">ds</li>
+                <li className="disc textwhite fsize14 font-200 mtpx5">ds</li>
+                <li className="disc textwhite fsize14 font-200 mtpx5">ds</li>
+                <li className="disc textwhite fsize14 font-200 mtpx5">ds</li>
+                <li className="disc textwhite fsize14 font-200 mtpx5">ds</li>
+                <li className="disc textwhite fsize14 font-200 mtpx5">ds</li>
+                <li className="disc textwhite fsize14 font-200 mtpx5">ds</li>
               </ul>
             </div>
           </div>

@@ -33,7 +33,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full bgforth">
+    <div className="w-full relative z-50 ptpx12 pbpx12">
       {sidebarshow ? (
         <div className="bg-glass fixed hidden h-100 sm-block w-full z-99">
           <div className="bgwhite w-90 h-100 absolute right-0 top-0">
@@ -75,16 +75,16 @@ const Navbar = () => {
         </div>
       ) : null}
       <div className="flex justify-between items-center container mx-auto">
-        <div className="logo">
-          <h1 className="fsize21 sm-mtpx1 sm-mbpx1 font-900 textwhite">
-            Rstar
+        <div className="">
+          <h1 className="fsize21 mtpx1 mbpx1 sm-mtpx1 sm-mbpx1 font-900 textwhite">
+            Bara<span className="textprimary mlpx2">Singha</span>
           </h1>
         </div>
-        <div className="flex gap-5 items-center justify-end menu sm-hidden">
+        <div className="flex items-center mrpx15 sm-hidden">
           {NavMenu.map((e) => (
             <>
               <NavLink activeClasses="textprimary" to={e.route}>
-                <p className="fsize13 textwhite mlpx28 cursor-pointer font-500">
+                <p className="fsize14 textwhite mlpx28 cursor-pointer font-500">
                   {e.name}
                 </p>
               </NavLink>
@@ -100,10 +100,17 @@ const Navbar = () => {
             />
           </div>
         </div>
-        <div className="navbtn flex gap-9 justify-end">
-          <button className="bgsecondary border-0 fsize13 font-500 cursor-pointer texttertiary plpx30 prpx30 ptpx8 pbpx8 rounded-20">
-            START
+        <div className="flex items-center">
+          <button className="cursor-pointer font-600 textdark border-primary rounded-5 ptpx5 pbpx5 md-ptpx6 md-pbpx6 sm-ptpx6 sm-pbpx6 md-plpx20 md-prpx20 sm-plpx16 sm-prpx16 plpx25 prpx25 fsize14 md-fsize14 sm-fsize13 bgprimary">
+            Login
           </button>
+            <div className="video3-icon mlpx15 flex items-center justify-center">
+              <FeatherIcon
+                icon="user"
+                size="16"
+                className="textdark flex"
+              />
+            </div>
         </div>
       </div>
     </div>

@@ -44,7 +44,7 @@ const Website = () => {
                 />
               </div>
               <div className="cardwebsites">
-                <div className="grid-cols-2  gap-12 ptpx20 pbpx20">
+                <div className="grid-cols-3 gap-12 ptpx20 pbpx20">
                   <div className="mbpx10">
                     <img
                       src="https://html.themeholy.com/haona/demo/assets/img/project/project_2_3.png"
@@ -56,34 +56,34 @@ const Website = () => {
                         <div className="flex items-center">
                           <FeatherIcon
                             icon="calendar"
-                            size="18"
+                            size="14"
                             className="textwhite flex"
                           />
-                          <p className="fsize14 font-200 text-justify mtpx1 mlpx5 textwhite">
+                          <p className="fsize13 font-200 text-justify mtpx1 mlpx5 textwhite">
                             12/12/2024
                           </p>
                         </div>
                         <div className="flex items-center mlpx19">
                           <FeatherIcon
                             icon="user"
-                            size="18"
+                            size="14"
                             className="textwhite flex"
                           />
-                          <p className="fsize14 font-200 text-justify mtpx1 mlpx5 textwhite">
+                          <p className="fsize13 font-200 text-justify mtpx1 mlpx5 textwhite">
                             Admin
                           </p>
                         </div>
                       </div>
-                      <h2 className="mtpx9 mbpx4 fsize20 font-400 textwhite">
+                      <h2 className="mtpx6 mbpx4 fsize15 font-400 textwhite">
                         Designing Tomorrow's Experiences Today
                       </h2>
                       <div className="flex items-center">
-                        <p className="fsize16 font-200 text-justify mtpx1 mbpx1 textwhite">
+                        <p className="fsize13 font-200 text-justify mtpx1 mbpx1 textwhite">
                           Read More
                         </p>
                         <FeatherIcon
                           icon="arrow-right"
-                          size="18"
+                          size="14"
                           className="textwhite flex mlpx7"
                         />
                       </div>
@@ -100,34 +100,34 @@ const Website = () => {
                         <div className="flex items-center">
                           <FeatherIcon
                             icon="calendar"
-                            size="18"
+                            size="14"
                             className="textwhite flex"
                           />
-                          <p className="fsize14 font-200 text-justify mtpx1 mlpx5 textwhite">
+                          <p className="fsize13 font-200 text-justify mtpx1 mlpx5 textwhite">
                             12/12/2024
                           </p>
                         </div>
                         <div className="flex items-center mlpx19">
                           <FeatherIcon
                             icon="user"
-                            size="18"
+                            size="14"
                             className="textwhite flex"
                           />
-                          <p className="fsize14 font-200 text-justify mtpx1 mlpx5 textwhite">
+                          <p className="fsize13 font-200 text-justify mtpx1 mlpx5 textwhite">
                             Admin
                           </p>
                         </div>
                       </div>
-                      <h2 className="mtpx9 mbpx4 fsize20 font-400 textwhite">
+                      <h2 className="mtpx6 mbpx4 fsize15 font-400 textwhite">
                         Designing Tomorrow's Experiences Today
                       </h2>
                       <div className="flex items-center">
-                        <p className="fsize16 font-200 text-justify mtpx1 mbpx1 textwhite">
+                        <p className="fsize13 font-200 text-justify mtpx1 mbpx1 textwhite">
                           Read More
                         </p>
                         <FeatherIcon
                           icon="arrow-right"
-                          size="18"
+                          size="14"
                           className="textwhite flex mlpx7"
                         />
                       </div>
@@ -144,34 +144,34 @@ const Website = () => {
                         <div className="flex items-center">
                           <FeatherIcon
                             icon="calendar"
-                            size="18"
+                            size="14"
                             className="textwhite flex"
                           />
-                          <p className="fsize14 font-200 text-justify mtpx1 mlpx5 textwhite">
+                          <p className="fsize13 font-200 text-justify mtpx1 mlpx5 textwhite">
                             12/12/2024
                           </p>
                         </div>
                         <div className="flex items-center mlpx19">
                           <FeatherIcon
                             icon="user"
-                            size="18"
+                            size="14"
                             className="textwhite flex"
                           />
-                          <p className="fsize14 font-200 text-justify mtpx1 mlpx5 textwhite">
+                          <p className="fsize13 font-200 text-justify mtpx1 mlpx5 textwhite">
                             Admin
                           </p>
                         </div>
                       </div>
-                      <h2 className="mtpx9 mbpx4 fsize20 font-400 textwhite">
+                      <h2 className="mtpx6 mbpx4 fsize15 font-400 textwhite">
                         Designing Tomorrow's Experiences Today
                       </h2>
                       <div className="flex items-center">
-                        <p className="fsize16 font-200 text-justify mtpx1 mbpx1 textwhite">
+                        <p className="fsize13 font-200 text-justify mtpx1 mbpx1 textwhite">
                           Read More
                         </p>
                         <FeatherIcon
                           icon="arrow-right"
-                          size="18"
+                          size="14"
                           className="textwhite flex mlpx7"
                         />
                       </div>
@@ -188,34 +188,34 @@ const Website = () => {
                         <div className="flex items-center">
                           <FeatherIcon
                             icon="calendar"
-                            size="18"
+                            size="14"
                             className="textwhite flex"
                           />
-                          <p className="fsize14 font-200 text-justify mtpx1 mlpx5 textwhite">
+                          <p className="fsize13 font-200 text-justify mtpx1 mlpx5 textwhite">
                             12/12/2024
                           </p>
                         </div>
                         <div className="flex items-center mlpx19">
                           <FeatherIcon
                             icon="user"
-                            size="18"
+                            size="14"
                             className="textwhite flex"
                           />
-                          <p className="fsize14 font-200 text-justify mtpx1 mlpx5 textwhite">
+                          <p className="fsize13 font-200 text-justify mtpx1 mlpx5 textwhite">
                             Admin
                           </p>
                         </div>
                       </div>
-                      <h2 className="mtpx9 mbpx4 fsize20 font-400 textwhite">
+                      <h2 className="mtpx6 mbpx4 fsize15 font-400 textwhite">
                         Designing Tomorrow's Experiences Today
                       </h2>
                       <div className="flex items-center">
-                        <p className="fsize16 font-200 text-justify mtpx1 mbpx1 textwhite">
+                        <p className="fsize13 font-200 text-justify mtpx1 mbpx1 textwhite">
                           Read More
                         </p>
                         <FeatherIcon
                           icon="arrow-right"
-                          size="18"
+                          size="14"
                           className="textwhite flex mlpx7"
                         />
                       </div>

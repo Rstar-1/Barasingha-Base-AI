@@ -1,70 +1,71 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
 /* ======================= Start-Color ======================= */
-$primary: #52fefe !important;
-$secondary: #3e00a7 !important;
-$tertiary: #414b5f !important;
-$forth: #212428 !important;
-$success: #4bb543 !important;
-$warning: #ff5722 !important;
-$danger: red !important;
-$info: #2196f3 !important;
-$white: #fff !important;
-$dark: #000 !important;
-$gray: gray !important;
+:root {
+  --primary: #7efefe !important;
+  --secondary: #283144 !important;
+  --tertiary: #242831 !important;
+  --forth: #283144 !important;
+  --success: #4bb543 !important;
+  --warning: #ff5722 !important;
+  --danger: #ff5b5c !important;
+  --info: #2196f3 !important;
+  --white: #fff !important;
+  --card: #fff !important;
+  --dark: #000 !important;
+  --gray: gray !important;
+}
 /* ======================= End-Color ======================= */
 
 /* ======================= Start-Bg-Color ======================= */
 .bgprimary {
-  background: $primary;
+  background: var(--primary);
+}
+.bgcard {
+  background: var(--card);
 }
 .bgsecondary {
-  background: $secondary;
+  background: var(--secondary);
 }
 .bgtertiary {
-  background: $tertiary;
+  background: var(--tertiary);
 }
 .bgforth {
-  background: $forth;
+  background: var(--forth);
 }
 .bgsuccess {
-  background: $success;
+  background: var(--success);
 }
 .bgwarning {
-  background: $warning;
+  background: var(--warning);
 }
 .bgdanger {
-  background: $danger;
+  background: var(--danger);
 }
 .bginfo {
-  background: $info;
+  background: var(--info);
 }
 .bgwhite {
-  background: $white;
+  background: var(--white);
 }
 .bggray {
-  background: $gray;
+  background: var(--gray);
 }
 .bgdark {
-  background: $dark;
+  background: var(--dark);
 }
 .bg-light-primary {
-  background: #f1f5f5 !important;
+  background: #efeeef4b !important;
 }
 .bg-light-secondary {
   background: #faf1f1 !important;
 }
 .bg-light-success {
-  background: rgb(232, 243, 232) !important;
+  background: #4bb5432e !important;
 }
 .bg-light-warning {
   background: #faf0ed !important;
 }
 .bg-light-danger {
-  background: rgb(251, 243, 243) !important;
+  background: rgba(255, 0, 0, 0.144) !important;
 }
 .bg-ec {
   background-color: #ececec !important;
@@ -115,80 +116,83 @@ $gray: gray !important;
 .liner-color3 {
   background: linear-gradient(45deg, #0045c7, #ff2c7d) !important;
 }
-.bg-second {
-  background: #151f3b !important;
-}
 /* ======================= End-Bg-Color ======================= */
 
 /* ======================= Start-Text-Color ======================= */
 .textprimary {
-  color: $primary;
+  color: var(--primary);
+}
+.textcard {
+  color: var(--card);
 }
 .textsecondary {
-  color: $secondary;
+  color: var(--secondary);
 }
 .texttertiary {
-  color: $tertiary;
+  color: var(--tertiary);
 }
 .textforth {
-  color: $forth;
+  color: var(--forth);
 }
 .textsuccess {
-  color: $success;
+  color: var(--success);
 }
 .textwarning {
-  color: $warning;
+  color: var(--warning);
 }
 .textdanger {
-  color: $danger;
+  color: var(--danger);
 }
 .textinfo {
-  color: $info;
+  color: var(--info);
 }
 .textwhite {
-  color: $white;
+  color: var(--white);
 }
 .textgray {
-  color: $gray;
+  color: var(--gray);
 }
 .textdark {
-  color: $dark;
+  color: var(--dark);
 }
 /* ======================= End-Text-Color ======================= */
 
 /* ======================= Start-Border ======================= */
 .border-primary {
-  border: 1px solid $primary;
+  border: 1px solid var(--primary);
+}
+.border-card {
+  border: 1px solid var(--card);
 }
 .border-secondary {
-  border: 1px solid $secondary;
+  border: 1px solid var(--secondary);
 }
 .border-tertiary {
-  border: 1px solid $tertiary;
+  border: 1px solid var(--tertiary);
 }
 .border-forth {
-  border: 1px solid $forth;
+  border: 1px solid var(--forth);
 }
 .border-success {
-  border: 1px solid $success;
+  border: 1px solid var(--success);
 }
 .border-warning {
-  border: 1px solid $warning;
+  border: 1px solid var(--warning);
 }
 .border-danger {
-  border: 1px solid $danger;
+  border: 1px solid var(--danger);
 }
 .border-info {
-  border: 1px solid $info;
+  border: 1px solid var(--info);
 }
 .border-white {
-  border: 1px solid $white;
+  border: 1px solid var(--white);
 }
 .border-gray {
-  border: 1px solid $gray;
+  border: 1px solid var(--gray);
 }
 .border-dark {
-  border: 1px solid $dark;
+  border: 1px solid var(--dark);
 }
 /* ======================= End-Border ======================= */
 
@@ -196,7 +200,7 @@ $gray: gray !important;
 @font-face {
   font-family: "poppins-semibold";
   src: local("poppins-semibold"),
-    url("../fonts/Poppins/Poppins-SemiBold.ttf") format("opentype");
+    url("../fonts/Poppins-SemiBold.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -204,7 +208,7 @@ $gray: gray !important;
 @font-face {
   font-family: "poppins-regular";
   src: local("poppins-regular"),
-    url("../fonts/Poppins/Poppins-Regular.ttf") format("opentype");
+    url("../fonts/Poppins-Regular.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -214,8 +218,8 @@ label,
 small,
 input,
 textarea,
-button,
-a {
+select,
+button {
   font-family: "poppins-regular" !important;
 }
 h1,
@@ -225,7 +229,8 @@ h4,
 h5,
 h6,
 span,
-li {
+li,
+a {
   font-family: "poppins-semibold" !important;
 }
 p {
@@ -239,6 +244,11 @@ input,
   @media (max-width: 640px) {
     font-size: 13px !important;
   }
+}
+.css-b62m3t-container,
+text.CircularProgressbar-text {
+  font-family: "poppins-regular" !important;
+  font-size: 14px !important;
 }
 /* ======================= End-Font-Family ======================= */
 
@@ -274,7 +284,7 @@ p {
     height: 60vh !important;
   }
 }
-.up-box {
+.setting-box {
   width: 50px !important;
   height: 50px !important;
   @media (max-width: 640px) {
@@ -282,7 +292,7 @@ p {
     height: 40px !important;
   }
 }
-.up-img {
+.table-img {
   width: 25px !important;
   height: 25px !important;
   @media (max-width: 640px) {
@@ -303,8 +313,16 @@ p {
   list-style: disc !important;
 }
 .dot {
-  width: 18px !important;
-  height: 18px !important;
+  width: 12px !important;
+  height: 12px !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  @media (max-width: 640px) {
+    width: 8px !important;
+    height: 8px !important;
+  }
 }
 .border-0 {
   border: none !important;
@@ -334,10 +352,10 @@ p {
   border-right: none !important;
 }
 .borderprimary {
-  border: 1px solid #7367f0 !important;
+  border: 1px solid var(--primary);
 }
 .bordersecondary {
-  border: 1px solid #e66465 !important;
+  border: 1px solid var(--secondary);
 }
 .center-absolute {
   top: 50% !important;
@@ -350,19 +368,8 @@ p {
 .b-shadow {
   box-shadow: 0px 9px 50px #1211271f !important;
 }
-.drop-w {
-  width: 120px !important;
-  border-radius: 6px !important;
-}
-.h-banner {
-  width: 100% !important;
-  height: 340px !important;
-  @media (min-width: 641px) and (max-width: 768px) {
-    height: 280px !important;
-  }
-  @media (max-width: 640px) {
-    height: 200px !important;
-  }
+.leading {
+  line-height: 15px !important;
 }
 /* ======================= End-Maincss ======================= */
 
@@ -386,8 +393,8 @@ p {
   cursor: pointer;
 }
 .pagination .selected {
-  background: $primary;
-  color: $white;
+  background: var(--primary);
+  color: var(--white);
 }
 /* ======================= End-Pagination ======================= */
 
@@ -395,8 +402,8 @@ p {
 .loader {
   border: 2px solid transparent;
   border-radius: 50%;
-  border-top: 2px solid $tertiary;
-  border-bottom: 2px solid $tertiary;
+  border-top: 2px solid var(--tertiary);
+  border-bottom: 2px solid var(--tertiary);
   width: 120px;
   height: 120px;
   animation: spin 2s linear infinite;
@@ -404,8 +411,8 @@ p {
 .loader2 {
   border: 2px solid transparent;
   border-radius: 50%;
-  border-top: 2px solid $tertiary;
-  border-bottom: 2px solid $tertiary;
+  border-top: 2px solid var(--tertiary);
+  border-bottom: 2px solid var(--tertiary);
   width: 70px;
   height: 70px;
   animation: spins 2s linear infinite;
@@ -429,9 +436,9 @@ p {
 /* ======================= End-loader ======================= */
 
 /* ======================= Start-Animatedcss ======================= */
-.marquee .para {
+.marquee p {
   transform: translateX(100%);
-  animation: scroll-left 12s linear infinite;
+  animation: scroll-left 10s linear infinite;
 }
 @keyframes scroll-left {
   0% {
@@ -451,30 +458,11 @@ p {
 .rotate-d {
   transform: rotate(20deg) !important;
 }
-.tab input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
+.dashboard .CircularProgressbar .CircularProgressbar-path {
+  stroke: var(--primary);
 }
-.tab__content {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.tab input:checked ~ .tab__content {
-  max-height: 100%;
-}
-.tab__label::after {
-  width: 1em;
-  height: 100%;
-  text-align: center;
-  transform: rotate(90deg);
-  transition: all 0.3s;
-}
-.tab input:checked + .tab__label::after {
-  transform: rotate(270deg);
+.dashboard .CircularProgressbar .CircularProgressbar-text {
+  fill: var(--primary);
 }
 .flip-card {
   width: 100%;
@@ -501,22 +489,273 @@ p {
   backface-visibility: hidden;
 }
 .flip-card-front {
-  background-color: $forth;
+  background-color: var(--forth);
   border-radius: 5px !important;
 }
 .flip-card-back {
-  background-color: $primary;
+  background-color: var(--primary);
   transform: rotateY(180deg);
   border-radius: 5px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
 }
+.bg-glass-nav {
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+.drawer .navhide {
+  position: absolute;
+  right: -50%;
+  width: 50% !important;
+  transition: all 0.3s ease-in 0s;
+}
+.drawer .navview {
+  position: absolute;
+  right: 0%;
+  width: 100% !important;
+  transition: all 0.3s ease-in 0s;
+}
 /* ======================= End-Animatedcss ======================= */
+
+/* ======================= Start-Button ======================= */
+.primarybtn {
+  background: transparent !important;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+.primarybtn:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+.secondarybtn {
+  background: transparent !important;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+.secondarybtn:hover {
+  background: var(--secondary);
+  color: var(--white);
+}
+.whitebtn {
+  background: transparent !important;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+.whitebtn:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+/* ======================= End-Button ======================= */
+
+/* ======================= Start-Home ======================= */
+
+.h-pro {
+  width: 65px !important;
+  height: 65px !important;
+}
+.h-progress {
+  width: 45px !important;
+  height: 45px !important;
+}
+.left-minus {
+  margin-left: -18% !important;
+  border-radius: 0px 10px 0px 0px !important;
+}
+.right-minus {
+  margin-right: -18% !important;
+  border-radius: 0px 0px 0px 10px !important;
+}
+.home .CircularProgressbar .CircularProgressbar-trail {
+  stroke: transparent !important;
+}
+.home .CircularProgressbar .CircularProgressbar-path {
+  stroke: #7efefe !important;
+}
+.bg-bottom {
+  height: 80px !important;
+  overflow: hidden;
+}
+.bg-clip {
+  margin-top: -65% !important;
+  background: var(--forth);
+  height: 300px !important;
+  clip-path: polygon(
+    30% 82%,
+    70% 82%,
+    100% 69%,
+    100% 100%,
+    70% 100%,
+    30% 100%,
+    0 100%,
+    0 69%
+  );
+  width: 100%;
+}
+.home-icon{
+  width: 40px !important;
+  height: 40px !important;
+}
+.left-h{
+  height: 80px !important;
+}
+
+/* ======================= End-Home ======================= */
+
+/* ======================= End-Admin ======================= */
+
+// Dashboard 1
+.w-side {
+  width: 17% !important;
+}
+.w-route {
+  width: 83% !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    width: 100% !important;
+  }
+  @media (max-width: 640px) {
+    width: 100% !important;
+  }
+}
+// Dashboard 1
+
+// Dashboard 2
+// Dashboard 2
+
+/* ======================= End-Admin ======================= */
+
+/* ======================= Start-Navbar ======================= */
+.navbar .active {
+  color: var(--primary) !important;
+}
+.navbar .activetext {
+  color: var(--white);
+}
+/* ======================= End-Navbar ======================= */
+
+/* ======================= Start-Sidebar ======================= */
+
+.sidebar-logo {
+  width: 100px !important;
+  height: 100px !important;
+}
+.dot-dash {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+// Section 1
+.sidebar1 .activesidebar {
+  color: var(--gray);
+}
+.sidebar1 .active {
+  color: var(--primary);
+}
+// Section 1
+
+// Section 2
+.sidebar2 .activesidebar .icon-circle {
+  color: var(--primary);
+  background: #efeeef4b !important;
+}
+.sidebar2 .active .icon-circle {
+  color: var(--primary);
+  background: var(--primary);
+}
+.sidebar2 .activesidebar .text-side {
+  color: var(--gray);
+}
+.sidebar2 .active .text-side {
+  color: var(--primary);
+}
+.icon-circle {
+  width: 24px !important;
+  height: 24px !important;
+}
+// Section 2
+
+// Section 3
+.sidebar3 .activesidebar {
+  color: var(--gray);
+}
+.sidebar3 .active {
+  color: var(--white);
+  background: var(--primary);
+}
+// Section 3
+
+// Section 4
+.sidebar4 .activesidebar {
+  color: var(--gray);
+}
+.sidebar4 .active {
+  color: var(--white);
+  background: var(--primary);
+}
+// Section 4
+
+// Section 5
+.sidebar5 .activesidebar {
+  color: var(--gray);
+}
+.sidebar5 .active {
+  color: var(--primary);
+  border-left: 4px solid var(--primary);
+  background: #efeeef4b !important;
+}
+// Section 5
+
+// Section 6
+.sidebar6 .activesidebar {
+  color: var(--gray);
+}
+.sidebar6 .active {
+  color: var(--primary);
+  border-left: 4px solid var(--primary);
+  border-radius: 8px 0px 0px 8px !important;
+  background: #efeeef4b !important;
+}
+// Section 6
+
+/* ======================= End-Sidebar ======================= */
+
+/* ======================= Start-Header ======================= */
+
+.header-logo {
+  width: 60px !important;
+  height: 60px !important;
+  @media (max-width: 912px) {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+// Header 1
+.border-h1 {
+  margin-top: 8px !important;
+  border-radius: 10px !important;
+  @media (max-width: 912px) {
+    margin-top: 5px !important;
+    border-radius: 8px !important;
+  }
+}
+// Header 1
+
+// Header 2
+.border-h2 {
+  border-radius: 0px 0px 10px 10px !important;
+  @media (max-width: 912px) {
+    border-radius: 8px !important;
+  }
+}
+// Header 2
+
+/* ======================= End-Header ======================= */
 
 /* ======================= Start-Table ======================= */
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
@@ -526,218 +765,244 @@ td {
   padding: 8px;
 }
 th {
-  background: $primary;
-  border: 1px solid #fff;
+  background: var(--primary);
+  border: 1px solid var(--gray);
   text-align: left;
   padding: 10px;
 }
 tr:nth-child(even):hover {
-  background-color: #f8f8fb;
+  background-color: var(--tertiary);
 }
 .h-input {
   height: 35px !important;
-  border: 1px solid #ececec !important;
-  padding-left: 12px !important;
 }
-.w-input {
-  width: 97% !important;
+.cust-scroll {
+  height: 77vh !important;
+  overflow-y: auto !important;
 }
-.pop-input {
-  width: 96% !important;
+.side-input {
+  width: 95% !important;
 }
-.text-input {
-  width: 99% !important;
-  border: 1px solid #ececec !important;
+.wid-sidebar {
+  width: 25% !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    width: 40% !important;
+  }
+  @media (max-width: 640px) {
+    width: 90% !important;
+  }
+}
+.pop-w {
+  width: 30% !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    width: 55% !important;
+  }
+  @media (max-width: 640px) {
+    width: 90% !important;
+  }
+}
+.close {
+  width: 20px !important;
+  height: 20px !important;
+}
+.border-images {
+  border: 1px dashed var(--primary);
+  height: 150px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 10px !important;
+}
+.img-input {
+  width: 100% !important;
+  height: 150px !important;
+  opacity: 0 !important;
+}
+.preview-img {
+  height: 158px !important;
+}
+.table-colsm {
+  min-width: 80px !important;
+  text-align: center !important;
+}
+.table-collg {
+  min-width: 200px !important;
+}
+.table-w {
+  width: 100% !important;
+  overflow: auto !important;
+}
+.table-w::-webkit-scrollbar {
+  height: 8px !important;
+  background: #fafafa !important;
+  width: 8px !important;
+}
+.table-w::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 5px !important;
+}
+.sm-border-none {
+  @media (max-width: 640px) {
+    border: none !important;
+  }
+}
+.table-img {
+  width: 100% !important;
+  height: 60px !important;
+  object-fit: contain !important;
 }
 /* ======================= End-Table ======================= */
 
-/* ======================= Start-Button ======================= */
-.primarybtn {
-  background: transparent !important;
-  border: 1px solid $primary;
-  color: $primary;
+/* ======================= Start-Login ======================= */
+.w-login {
+  width: 97% !important;
 }
-.primarybtn:hover {
-  background: $primary;
-  color: $white;
-}
-.secondarybtn {
-  background: transparent !important;
-  border: 1px solid #e66465 !important;
-  color: #e66465 !important;
-}
-.secondarybtn:hover {
-  background: #e66465 !important;
-  color: #fff !important;
-}
-.whitebtn {
-  background: transparent !important;
-  border: 1px solid #fff !important;
-  color: #fff !important;
-}
-.whitebtn:hover {
-  background: #fff !important;
-  color: $primary;
-}
-/* ======================= End-Button ======================= */
+/* ======================= End-Login ======================= */
 
-/* ======================= Start-Navbar ======================= */
-.active {
-  color: $primary;
-}
-.activetext {
-  color: #fff;
-}
-/* ======================= End-Navbar ======================= */
+/* ======================= Start-dashboard ======================= */
 
-/* ======================= Start-home ======================= */
-.h-ban {
-  height: 100vh !important;
+// Dashboard 1
+.dash1-h {
+  height: 140px !important;
 }
-.bg-circle {
-  background: #384c50 !important;
-  width: 60px !important;
-  height: 60px !important;
+.bordt {
+  border-top: 1px solid #ececec !important;
+}
+.dash1-minus {
+  margin-top: -7% !important;
+}
+.dash1-social {
+  width: 70px !important;
+  height: 70px !important;
+}
+// Dashboard 1
+
+// Dashboard 2
+.dash2-h {
+  height: 130px !important;
+}
+.dash2-social {
+  width: 70px !important;
+  height: 70px !important;
+}
+.primary-border {
+  border-left: 5px solid var(--primary);
+}
+.secondary-border {
+  border-left: 5px solid var(--secondary);
+}
+.warning-border {
+  border-left: 5px solid var(--warning);
+}
+.success-border {
+  border-left: 5px solid var(--success);
+}
+// Dashboard 2
+
+// Dashboard 3
+.dash3-h {
+  height: 140px !important;
+}
+.circle1 {
+  width: 120px !important;
+  height: 120px !important;
   border-radius: 50% !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+  margin-top: -35% !important;
+  margin-left: 10% !important;
 }
-.margin-minus {
-  margin-top: -36px !important;
+.circle2 {
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50% !important;
+  margin-top: 30% !important;
+  margin-left: 28% !important;
 }
-.margin-leftmin {
-  margin-left: -20px !important;
+// Dashboard 3
+
+// Dashboard 4
+.dash4-h {
+  height: 130px !important;
 }
-.video3-icon {
-  width: 35px !important;
-  height: 35px !important;
-  border-radius: 5px !important;
-  background: $primary;
-  @media (min-width: 641px) and (max-width: 768px) {
-    width: 40px !important;
-    height: 40px !important;
-  }
-  @media (max-width: 640px) {
-    width: 38px !important;
-    height: 38px !important;
-  }
-}
-.hand-img {
-  width: 25px !important;
-  height: 25px !important;
-}
-.opacity-3 {
-  opacity: 0.3;
-}
-.circle-time {
-  width: 80px !important;
-  height: 80px !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
-.h-bara {
-  height: 300px !important;
-}
-.bg-time {
-  width: 150px !important;
+// Dashboard 4
+
+// Dashboard 5
+// Dashboard 5
+
+// Dashboard 6
+.dash6-h {
   height: 150px !important;
-  border-radius: 50% !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
 }
-.bg-date {
+// Dashboard 6
+
+// Dashboard 6
+.dash7-h {
+  height: 150px !important;
+  border-bottom: 4px solid var(--primary);
+}
+.map-img {
   width: 100px !important;
   height: 100px !important;
-  border-radius: 50% !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
 }
-.h-note {
-  height: 200px !important;
-  overflow-y: auto !important;
-}
-/* ======================= End-home ======================= */
+// Dashboard 6
 
-/* ======================= Start-websites ======================= */
-.h-website {
-  width: 100% !important;
-  height: 70vh !important;
+/* ======================= End-dashboard ======================= */
+
+/* ======================= Start-Management ======================= */
+
+.management-img {
+  width: 50px !important;
+  height: 50px !important;
 }
-.website-img {
-  width: 100% !important;
-  height: 250px !important;
-}
-.cardwebsites {
-  width: 100% !important;
+
+// Management 1
+.management1-scroll {
   height: 68vh !important;
   overflow-y: auto !important;
 }
-/* ======================= End-websites ======================= */
+// Management 1
 
-/* ======================= Start-gallery ======================= */
-.h-gallery {
-  width: 100% !important;
-  height: 200px !important;
-}
-.cardgallery {
-  width: 100% !important;
-  height: 71vh !important;
-  overflow-y: auto !important;
-}
-/* ======================= End-gallery ======================= */
+/* ======================= End-Management ======================= */
 
-/* ======================= Start-hardware ======================= */
-.h-hardware {
-  width: 100% !important;
-  height: 200px !important;
-}
-.cardhardware {
-  width: 100% !important;
-  height: 71vh !important;
-  overflow-y: auto !important;
-}
-/* ======================= End-hardware ======================= */
+/* ======================= Start-CMS ======================= */
 
-/* ======================= Start-loader ======================= */
-.loader {
-  border: 2px solid transparent;
-  border-radius: 50%;
-  border-top: 2px solid $tertiary;
-  border-bottom: 2px solid $tertiary;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
+.tab-primary {
+  border-bottom: 2px solid var(--primary);
+  margin-bottom: -1px !important;
 }
-.loader2 {
-  border: 2px solid transparent;
-  border-radius: 50%;
-  border-top: 2px solid $tertiary;
-  border-bottom: 2px solid $tertiary;
-  width: 70px;
-  height: 70px;
-  animation: spins 2s linear infinite;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+.cms-img {
+  width: 100% !important;
+  height: 60px !important;
+  @media (max-width: 640px) {
+    height: 40px !important;
   }
 }
-@keyframes spins {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
+
+/* ======================= End-CMS ======================= */
+
+/* ======================= Start-Billing ======================= */
+
+.billing-img {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+/* ======================= End-Billing ======================= */
+
+/* ======================= Start-HowItWorks ======================= */
+
+/* ======================= End-HowItWorks ======================= */
+
+/* ======================= End-Settings ======================= */
+
+.setting-scroll {
+  @media (max-width: 640px) {
+    min-width: 100% !important;
+    overflow-x: auto !important;
+    border: none !important;
   }
 }
-/* ======================= End-loader ======================= */
+
+/* ======================= End-Settings ======================= */
 
 /* ======================= Start-arc ======================= */
 .reactor-container {
@@ -844,110 +1109,3 @@ tr:nth-child(even):hover {
   }
 }
 /* ======================= End-arc ======================= */
-
-/* ======================= Start-Maincss ======================= */
-body {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none !important;
-}
-p {
-  margin: 0px;
-  padding: 0px;
-}
-.list-none {
-  list-style: none !important;
-}
-.cursor-pointer {
-  cursor: pointer !important;
-}
-.error-h {
-  height: 90vh !important;
-  @media (max-width: 640px) {
-    height: 60vh !important;
-  }
-}
-.up-box {
-  width: 50px !important;
-  height: 50px !important;
-  @media (max-width: 640px) {
-    width: 40px !important;
-    height: 40px !important;
-  }
-}
-.up-img {
-  width: 25px !important;
-  height: 25px !important;
-  @media (max-width: 640px) {
-    width: 20px !important;
-    height: 20px !important;
-  }
-}
-.z-999 {
-  z-index: 9999 !important;
-}
-.h-100 {
-  height: 100vh !important;
-}
-.decimal {
-  list-style: decimal !important;
-}
-.disc {
-  list-style: disc !important;
-}
-.dot {
-  width: 12px !important;
-  height: 12px !important;
-}
-.border-0 {
-  border: none !important;
-}
-.border-ec {
-  border: 1px solid #ececec !important;
-}
-.bordb {
-  border-bottom: 1px solid #ececec !important;
-}
-.border-ec {
-  border: 1px solid #ececec !important;
-}
-.center-absolute {
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-}
-.input-css {
-  border: 1px solid #ececec !important;
-  height: 38px !important;
-  border-radius: 6px !important;
-  padding-left: 12px !important;
-}
-/* ======================= End-Maincss ======================= */
-
-/* ======================= Start-Animatedcss ======================= */
-.marquee p {
-  transform: translateX(100%);
-  animation: scroll-left 10s linear infinite;
-}
-@keyframes scroll-left {
-  0% {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-  100% {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-.clip {
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%) !important;
-}
-.rotate-d {
-  transform: rotate(20deg) !important;
-}
-/* ======================= End-Animatedcss ======================= */

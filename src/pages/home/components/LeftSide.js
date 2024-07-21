@@ -5,7 +5,6 @@ import {
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import RadialSeparators from "./RadialSeparators";
-import FeatherIcon from "feather-icons-react";
 
 const LeftSide = () => {
   const percentage = 60;
@@ -13,7 +12,7 @@ const LeftSide = () => {
     <div className="home">
       <div className="grid-cols-2">
         <div className="flex items-end">
-          <div className="h-pro bgsecondary flex items-center justify-center rounded-full">
+          <div className="h-pro bgforth flex items-center justify-center rounded-full">
             <div className="h-progress relative">
               <CircularProgressbarWithChildren
                 value={percentage}
@@ -36,14 +35,14 @@ const LeftSide = () => {
               </div>
             </div>
           </div>
-          <div className="bgsecondary plpx30 prpx18 py4 left-minus">
+          <div className="bgforth plpx30 prpx18 py4 left-minus">
             <p className="textwhite font-400 fsize14 sm-fsize12 md-fsize14">
               Section
             </p>
           </div>
         </div>
         <div className="flex items-end">
-          <div className="h-pro bgsecondary flex items-center justify-center rounded-full">
+          <div className="h-pro bgforth flex items-center justify-center rounded-full">
             <div className="h-progress relative">
               <CircularProgressbarWithChildren
                 value={percentage}
@@ -66,7 +65,7 @@ const LeftSide = () => {
               </div>
             </div>
           </div>
-          <div className="bgsecondary plpx30 prpx18 py4 left-minus">
+          <div className="bgforth plpx30 prpx18 py4 left-minus">
             <p className="textwhite font-400 fsize14 sm-fsize12 md-fsize14">
               Section
             </p>

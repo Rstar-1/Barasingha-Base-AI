@@ -11,27 +11,27 @@ const Navbar = () => {
     {
       icon: "user",
       name: "Admin",
-      route: "admin",
+      route: "/admin/dashboard",
     },
     {
       icon: "settings",
-      name: "Website",
-      route: "website",
+      name: "Automate",
+      route: "/automate/dashboard",
     },
     {
       icon: "phone-call",
-      name: "Sections",
+      name: "Website",
       route: "connect",
     },
     {
       icon: "grid",
-      name: "Pages",
-      route: "gallery",
+      name: "Mine",
+      route: "/mine/dashboard",
     },
   ];
 
   return (
-    <div className="w-full relative z-50 ptpx12 pbpx12 navbar">
+    <div className="w-full fixed z-50 ptpx12 pbpx12 navbar">
       <div className="flex justify-between items-center container mx-auto">
         <div className="mtpx6">
           <h1 className="fsize21 mtpx1 mbpx1 sm-mtpx1 sm-mbpx1 font-900 textwhite">

@@ -2,6 +2,12 @@ import { Route, Routes, useLocation } from "react-router-dom";
 // Components
 import Sidebar from "./pages/admin/sidebar/Sidebar";
 import Header from "./pages/admin/layouts/header/Header";
+// Components
+import Sidebar2 from "./pages/automate/sidebar/Sidebar";
+import Header2 from "./pages/automate/layouts/header/Header";
+// Components
+import Sidebar3 from "./pages/mine/sidebar/Sidebar";
+import Header3 from "./pages/mine/layouts/header/Header";
 // Auth Pages
 import Login from "./pages/login/Login";
 import Register from "./pages/login/Register";
@@ -10,6 +16,8 @@ import Coming from "./pages/admin/layouts/components/coming/Coming";
 import Error from "./pages/error/Error";
 // Pages
 import Dashboard from "./pages/admin/layouts/components/dashboard/Dashboard";
+import Dashboard2 from "./pages/automate/layouts/components/dashboard/Dashboard";
+import Dashboard3 from "./pages/mine/layouts/components/dashboard/Dashboard";
 import Seo from "./pages/admin/layouts/components/seo/Seo";
 import Management from "./pages/admin/layouts/components/management/Management";
 import Cms from "./pages/admin/layouts/components/cms/Cms";
@@ -29,16 +37,25 @@ const App = () => {
   const location = useLocation();
   return (
     <div className="App relative">
-      <Navbar />
+      {location.pathname === "/" || location.pathname === "/home" ? (
+        <Navbar />
+      ) : null}
       <div className="flex bgtertiary h-100 overflow-hidden">
-        {location.pathname === "/" ||
-        location.pathname === "/home" ||
-        location.pathname === "/login" ||
-        location.pathname === "/register" ? null : (
+        {location.pathname === "/admin/dashboard" ? (
           <div className="w-side md-hidden sm-hidden">
             <Sidebar />
           </div>
-        )}
+        ) : null}
+        {location.pathname === "/automate/dashboard" ? (
+          <div className="w-side md-hidden sm-hidden">
+            <Sidebar2 />
+          </div>
+        ) : null}
+        {location.pathname === "/mine/dashboard" ? (
+          <div className="w-side md-hidden sm-hidden">
+            <Sidebar3 />
+          </div>
+        ) : null}
         <div
           className={
             location.pathname === "/" ||
@@ -49,12 +66,9 @@ const App = () => {
               : "w-route mlpx9 md-mlpx1 sm-mlpx1 mrpx9 md-mrpx1 sm-mrpx1"
           }
         >
-          {location.pathname === "/" ||
-          location.pathname === "/home" ||
-          location.pathname === "/login" ||
-          location.pathname === "/register" ? null : (
-            <Header />
-          )}
+          {location.pathname === "/automate/dashboard" ? <Header /> : null}
+          {location.pathname === "/admin/dashboard" ? <Header2 /> : null}
+          {location.pathname === "/mine/dashboard" ? <Header2 /> : null}
           <Routes>
             <Route path="/" element={<Home />} />
             {/* ======================= Start-Login ======================= */}
@@ -63,8 +77,10 @@ const App = () => {
             {/* ======================= Start-Login ======================= */}
             {/* ======================= Start-Pages ======================= */}
             <Route path="/home" element={<Home />} />
-            {/* <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/management" element={<Management />} />
+            <Route path="/admin/dashboard" element={<Dashboard />} />
+            <Route path="/automate/dashboard" element={<Dashboard2 />} />
+            <Route path="/mine/dashboard" element={<Dashboard2 />} />
+            {/*<Route path="/management" element={<Management />} />
             <Route path="/brands" element={<Brands />} />
             <Route path="/clients" element={<Clients />} />
             <Route path="/teams" element={<Team />} />

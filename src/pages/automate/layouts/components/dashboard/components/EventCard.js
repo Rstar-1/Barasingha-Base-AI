@@ -1,186 +1,140 @@
 import React from "react";
-import {
-  CircularProgressbar
-} from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
 import FeatherIcon from "feather-icons-react";
+import logo from "./../../../../../../assets/logo.png";
 
 const EventCard = () => {
-  const percentage = 60;
   return (
-    <div className="grid-cols-3 event gap-12 w-full mtpx30 items-start">
-      <div className="bgforth px20 py26 rounded-5 event-h">
-        <div className="grid-cols-2">
-          <div className="bordr">
-            <div className="bordb py18">
-              <div className="event-progress mx-auto relative">
-                <CircularProgressbar
-                  value={percentage}
-                  strokeWidth={6}
-                ></CircularProgressbar>
-                <div className="flex items-center justify-center absolute top-0 left-0 event-progress">
-                  <p className="textwhite fsize14">{`${percentage}`}%</p>
-                </div>
-              </div>
-              <p className="mtpx10 textwhite fsize14 text-center">
-                Lorem Ipsum
-              </p>
-            </div>
-            <div className="py18">
-              <div className="event-progress mx-auto relative">
-                <CircularProgressbar
-                  value={percentage}
-                  strokeWidth={6}
-                ></CircularProgressbar>
-                <div className="flex items-center justify-center absolute top-0 left-0 event-progress">
-                  <p className="textwhite fsize14">{`${percentage}`}%</p>
-                </div>
-              </div>
-              <p className="mtpx10 textwhite fsize14 text-center">
-                Lorem Ipsum
-              </p>
-            </div>
+    <div>
+      <div className="flex gap-8 w-full mtpx20">
+        <div className="w-40 flex bgforth p10 rounded-5">
+          <div className="w-70 mrpx6">
+            <img src={logo} className="real-img rounded-5" alt="real-img" />
           </div>
-          <div className="">
-            <div className="bordb py18">
-              <div className="event-progress mx-auto relative">
-                <CircularProgressbar
-                  value={percentage}
-                  strokeWidth={6}
-                ></CircularProgressbar>
-                <div className="flex items-center justify-center absolute top-0 left-0 event-progress">
-                  <p className="textwhite fsize14">{`${percentage}`}%</p>
-                </div>
+          <div className="grid-cols-1 mlpx6 w-30 gap-6">
+            <img
+              src={logo}
+              className="preview-img rounded-5"
+              alt="preview-img"
+            />
+            <img
+              src={logo}
+              className="preview-img rounded-5"
+              alt="preview-img"
+            />
+            <img
+              src={logo}
+              className="preview-img rounded-5"
+              alt="preview-img"
+            />
+          </div>
+        </div>
+        <div className="w-60 bgforth rounded-5">
+          <div className="p20">
+            <div className="flex items-start">
+              <div className="home-icon bg-glass2 flex items-center justify-center rounded-full">
+                <FeatherIcon
+                  icon="user"
+                  className="textprimary flex"
+                  size={16}
+                />
               </div>
-              <p className="mtpx10 textwhite fsize14 text-center">
-                Lorem Ipsum
-              </p>
+              <div className="mlpx12">
+                <h6 className="fsize14 font-300 textprimary my1 leading">
+                  Top Courses
+                </h6>
+                <p className="fsize12 font-300 textwhite">1000</p>
+              </div>
             </div>
-            <div className="py18">
-              <div className="event-progress mx-auto relative">
-                <CircularProgressbar
-                  value={percentage}
-                  strokeWidth={6}
-                ></CircularProgressbar>
-                <div className="flex items-center justify-center absolute top-0 left-0 event-progress">
-                  <p className="textwhite fsize14">{`${percentage}`}%</p>
+            <div className="p6">
+              <p className="fsize14 mtpx10 font-300 textwhite">
+                In publishing and graphic design, Lorem ipsum is a placeholder
+                text commonly used to demonstrate the visual
+              </p>
+              <div className="grid-cols-4 gap-12 mtpx16">
+                <div className="">
+                  <h6 className="fsize16 font-300 textwhite my1 leading">
+                    Start Date
+                  </h6>
+                  <div className="mtpx8">
+                    <p className="fsize12 font-300 textsuccess w-max px8 py1 bg-light-success">
+                      12/21/2024
+                    </p>
+                  </div>
+                </div>
+                <div className="">
+                  <h6 className="fsize16 font-300 textwhite my1 leading">
+                    End Date
+                  </h6>
+                  <div className="mtpx8">
+                    <p className="fsize12 font-300 textdanger w-max px8 py1 bg-light-danger">
+                      12/21/2024
+                    </p>
+                  </div>
+                </div>
+                <div className="">
+                  <h6 className="fsize16 font-300 textwhite my1 leading">
+                    Extension
+                  </h6>
+                  <div className="mtpx8">
+                    <p className="fsize14 font-300 textwhite">Custom</p>
+                  </div>
+                </div>
+                <div className="">
+                  <h6 className="fsize16 font-300 textwhite my1 leading">
+                    Start Date
+                  </h6>
+                  <div className="mtpx8">
+                    <p className="fsize14 font-300 textwhite">12/21/2024</p>
+                  </div>
                 </div>
               </div>
-              <p className="mtpx10 textwhite fsize14 text-center">
-                Lorem Ipsum
-              </p>
+              <div className="mtpx22 grid-cols-2 gap-10">
+                <button className="py8 rounded-5 border-0 bgtertiary textwhite w-full">
+                  Start
+                </button>
+                <button className="py8 rounded-5 border-0 bgtertiary textwhite w-full">
+                  Start
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="bgforth px20 py26 rounded-5 event-h">
-        <h6 className="fsize20 my1 textwhite leading">Sticky Notes</h6>
-        <div className="notes-h mtpx16 pbpx10">
-          <div className=" grid-cols-1 gap-12">
-            <div className="flex items-center justify-between bg-glass2 rounded-5 p8">
-              <div className="w-90">
-                <p className="fsize14 line-clamp1 font-300 textwhite">
-                  Top Courses Top Courses Top Courses Top Courses Top Courses
-                  Top Courses Top Courses
-                </p>
-              </div>
-              <FeatherIcon className="textdanger" size={18} icon="trash-2" />
-            </div>
-            <div className="flex items-center justify-between bg-glass2 rounded-5 p8">
-              <div className="w-90">
-                <p className="fsize14 line-clamp1 font-300 textwhite">
-                  Top Courses Top Courses Top Courses Top Courses Top Courses
-                  Top Courses Top Courses
-                </p>
-              </div>
-              <FeatherIcon className="textdanger" size={18} icon="trash-2" />
-            </div>
-            <div className="flex items-center justify-between bg-glass2 rounded-5 p8">
-              <div className="w-90">
-                <p className="fsize14 line-clamp1 font-300 textwhite">
-                  Top Courses Top Courses Top Courses Top Courses Top Courses
-                  Top Courses Top Courses
-                </p>
-              </div>
-              <FeatherIcon className="textdanger" size={18} icon="trash-2" />
-            </div>
-            <div className="flex items-center justify-between bg-glass2 rounded-5 p8">
-              <div className="w-90">
-                <p className="fsize14 line-clamp1 font-300 textwhite">
-                  Top Courses Top Courses Top Courses Top Courses Top Courses
-                  Top Courses Top Courses
-                </p>
-              </div>
-              <FeatherIcon className="textdanger" size={18} icon="trash-2" />
-            </div>
-            <div className="flex items-center justify-between bg-glass2 rounded-5 p8">
-              <div className="w-90">
-                <p className="fsize14 line-clamp1 font-300 textwhite">
-                  Top Courses Top Courses Top Courses Top Courses Top Courses
-                  Top Courses Top Courses
-                </p>
-              </div>
-              <FeatherIcon className="textdanger" size={18} icon="trash-2" />
-            </div>
+      <div className="mtpx20">
+        <div className="bordb">
+          <div className="bgprimary w-max px26 py8 bordbtn">
+            <p className="fsize14 textdark font-400">Section</p>
           </div>
         </div>
-      </div>
-      <div className="bgforth px20 py26 rounded-5 event-h">
-        <div className="flex items-center justify-between">
-          <div className="flex items-start">
-            <div className="home-icon bg-glass2 flex items-center justify-center rounded-5">
-              <FeatherIcon icon="grid" className="textprimary flex" size={16} />
-            </div>
-            <div className="mlpx12">
-              <h6 className="fsize16 font-300 textwhite my1 leading">
-                Top Courses
-              </h6>
-              <p className="fsize12 font-300 textwhite">Top Courses</p>
-            </div>
+        <div className="mtpx10 grid-cols-4 gap-12">
+          <div className="p10 rounded-5 bgforth">
+            <img
+              src={logo}
+              className="section-img rounded-5"
+              alt="section-img"
+            />
           </div>
-          <p className="textsuccess fsize14">70%</p>
-        </div>
-        <div className="flex items-center justify-between mtpx24">
-          <div className="flex items-start">
-            <div className="home-icon bg-glass2 flex items-center justify-center rounded-5">
-              <FeatherIcon icon="grid" className="textprimary flex" size={16} />
-            </div>
-            <div className="mlpx12">
-              <h6 className="fsize16 font-300 textwhite my1 leading">
-                Top Courses
-              </h6>
-              <p className="fsize12 font-300 textwhite">Top Courses</p>
-            </div>
+          <div className="p10 rounded-5 bgforth">
+            <img
+              src={logo}
+              className="section-img rounded-5"
+              alt="section-img"
+            />
           </div>
-          <p className="textsuccess fsize14">70%</p>
-        </div>
-        <div className="flex items-center justify-between mtpx24">
-          <div className="flex items-start">
-            <div className="home-icon bg-glass2 flex items-center justify-center rounded-5">
-              <FeatherIcon icon="grid" className="textprimary flex" size={16} />
-            </div>
-            <div className="mlpx12">
-              <h6 className="fsize16 font-300 textwhite my1 leading">
-                Top Courses
-              </h6>
-              <p className="fsize12 font-300 textwhite">Top Courses</p>
-            </div>
+          <div className="p10 rounded-5 bgforth">
+            <img
+              src={logo}
+              className="section-img rounded-5"
+              alt="section-img"
+            />
           </div>
-          <p className="textsuccess fsize14">70%</p>
-        </div>
-        <div className="flex items-center justify-between mtpx24">
-          <div className="flex items-start">
-            <div className="home-icon bg-glass2 flex items-center justify-center rounded-5">
-              <FeatherIcon icon="grid" className="textprimary flex" size={16} />
-            </div>
-            <div className="mlpx12">
-              <h6 className="fsize16 font-300 textwhite my1 leading">
-                Top Courses
-              </h6>
-              <p className="fsize12 font-300 textwhite">Top Courses</p>
-            </div>
+          <div className="p10 rounded-5 bgforth">
+            <img
+              src={logo}
+              className="section-img rounded-5"
+              alt="section-img"
+            />
           </div>
-          <p className="textsuccess fsize14">70%</p>
         </div>
       </div>
     </div>

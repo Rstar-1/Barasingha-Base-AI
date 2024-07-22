@@ -232,7 +232,7 @@ const AddGallery = () => {
           <label className="fsize14 textgray">Section Id</label>
           <div className="mtpx8">
             <input
-              className="side-input bgwhite textgray h-input fsize14 rounded-5 plpx10 border-ec"
+              className="side-input bgforth textgray h-input fsize14 rounded-5 plpx10 border-ec"
               placeholder="Enter Section Id"
               value={formData.sectionid}
               onChange={handleInputChange}
@@ -249,7 +249,7 @@ const AddGallery = () => {
           <label className="fsize14 textgray">Title</label>
           <div className="mtpx8">
             <input
-              className="side-input bgwhite textgray h-input fsize14 rounded-5 plpx10 border-ec"
+              className="side-input bgforth textgray h-input fsize14 rounded-5 plpx10 border-ec"
               placeholder="Enter Title"
               value={formData.title}
               onChange={handleInputChange}
@@ -266,7 +266,7 @@ const AddGallery = () => {
           <label className="fsize14 textgray">Sub Title</label>
           <div className="mtpx8">
             <input
-              className="side-input bgwhite textgray h-input fsize14 rounded-5 plpx10 border-ec"
+              className="side-input bgforth textgray h-input fsize14 rounded-5 plpx10 border-ec"
               placeholder="Enter Sub Title"
               value={formData.subtitle}
               onChange={handleInputChange}
@@ -283,7 +283,7 @@ const AddGallery = () => {
           <label className="fsize14 textgray">Description</label>
           <div className="mtpx8">
             <input
-              className="side-input bgwhite textgray h-input fsize14 rounded-5 plpx10 border-ec"
+              className="side-input bgforth textgray h-input fsize14 rounded-5 plpx10 border-ec"
               placeholder="Enter Description"
               value={formData.description}
               onChange={handleInputChange}
@@ -299,7 +299,7 @@ const AddGallery = () => {
         <div className="mtpx15 flex justify-center">
           <button
             type="submit"
-            className="border-0 cursor-pointer w-full font-500 textwhite ptpx10 pbpx10 md-ptpx6 md-pbpx6 md-plpx16 md-prpx16 sm-ptpx8 sm-pbpx8 sm-plpx16 sm-prpx16 plpx25 prpx25 fsize14 rounded-5 bgprimary"
+            className="border-0 cursor-pointer w-full font-500 textwhite ptpx10 pbpx10 md-ptpx6 md-pbpx6 md-plpx16 md-prpx16 sm-ptpx8 sm-pbpx8 sm-plpx16 sm-prpx16 plpx25 prpx25 fsize14 rounded-5 bgsecondary"
           >
             Submit
           </button>

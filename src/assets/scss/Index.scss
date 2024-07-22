@@ -10,7 +10,7 @@
   --info: #2196f3 !important;
   --white: #fff !important;
   --card: #fff !important;
-  --dark: #000 !important;
+  --dark: #201e1e !important;
   --gray: #97a5be !important;
 }
 /* ======================= End-Color ======================= */
@@ -382,18 +382,18 @@ p {
   gap: 12px;
 }
 .pagination li {
-  background: #ececec;
+  background: var(--forth);
   width: 30px;
   height: 30px;
   display: flex;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  color: #111;
+  color: var(--gray);
   cursor: pointer;
 }
 .pagination .selected {
-  background: var(--primary);
+  background: var(--secondary);
   color: var(--white);
 }
 /* ======================= End-Pagination ======================= */
@@ -694,13 +694,14 @@ table {
   width: 100%;
 }
 td {
-  border: 1px solid #ececec;
-  text-align: left;
+  border: 1px solid var(--forth);
+  text-align: left; 
+  background: var(--tertiary);
   padding: 8px;
 }
 th {
-  background: var(--primary);
-  border: 1px solid var(--gray);
+  background: var(--forth);
+  border: 1px solid var(--forth);
   text-align: left;
   padding: 10px;
 }
@@ -768,11 +769,11 @@ tr:nth-child(even):hover {
 }
 .table-w::-webkit-scrollbar {
   height: 8px !important;
-  background: #fafafa !important;
+  background: var(--forth);
   width: 8px !important;
 }
 .table-w::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background: var(--secondary);
   border-radius: 5px !important;
 }
 .sm-border-none {
@@ -833,6 +834,30 @@ tr:nth-child(even):hover {
 }
 .event .CircularProgressbar .CircularProgressbar-path {
   stroke: #7efefe !important;
+}
+.preview-img {
+  width: 100% !important;
+  height: 80px !important;
+  @media (max-width: 640px) {
+    height: 40px !important;
+  }
+}
+.real-img {
+  width: 100% !important;
+  height: 250px !important;
+  @media (max-width: 640px) {
+    height: 40px !important;
+  }
+}
+.section-img {
+  width: 100% !important;
+  height: 160px !important;
+  @media (max-width: 640px) {
+    height: 40px !important;
+  }
+}
+.bordbtn{
+  border-radius: 0px 20px 0px 0px !important;
 }
 
 /* ======================= End-dashboard ======================= */

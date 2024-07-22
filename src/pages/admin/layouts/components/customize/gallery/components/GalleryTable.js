@@ -85,8 +85,8 @@ const GalleryTable = () => {
             : "bg-glass-nav b-shadow fixed top-0 h-100 z-99 overflow-hidden navhide"
         }
       >
-        <div className="bgwhite wid-sidebar h-100 absolute right-0 top-0">
-          <div className="bgprimary p10">
+        <div className="bgforth wid-sidebar h-100 absolute right-0 top-0">
+          <div className="bgsecondary p10">
             <div className="flex items-center justify-between gap-4 plpx10 prpx10">
               <p className="fsize16 textwhite mtpx4 mbpx4 cursor-pointer font-500">
                 Add gallery
@@ -126,12 +126,12 @@ const GalleryTable = () => {
           <EditGallery editshow={editshow} />
         </div>
       </div>
-      <div className="mtpx16 bgcard rounded-10 sm-rounded-none">
+      <div className="rounded-10 sm-rounded-none">
         <div className="my10 flex gap-12 items-center">
           <div className="w-60">
             <div className="relative">
               <input
-                className="w-full bgwhite textgray h-input fsize14 rounded-5 plpx10 border-ec"
+                className="w-full bgforth textgray h-input fsize14 rounded-5 plpx10 border-0"
                 placeholder="Search"
                 value={search}
                 onChange={handleSearchChange}
@@ -148,30 +148,30 @@ const GalleryTable = () => {
           <div className="w-40 flex justify-end">
             <button
               onClick={() => setaddshow(true)}
-              className="border-0 cursor-pointer font-500 textwhite rounded-5 ptpx10 pbpx10 md-ptpx6 md-pbpx6 md-plpx16 md-prpx16 sm-ptpx8 sm-pbpx8 sm-plpx16 sm-prpx16 plpx25 prpx25 fsize14 bgprimary"
+              className="border-0 cursor-pointer font-700 textdark rounded-5 py8 px18 bgsecondary"
             >
               Add
             </button>
           </div>
         </div>
-        <div className="border-ec sm-border-none rounded-10 p16 sm-p1 sm-rounded-5 mtpx20 md-mtpx16 sm-mtpx14">
+        <div className="rounded-5 sm-rounded-5 mtpx20 md-mtpx16 sm-mtpx14">
           <div className="table-w">
             <table className="w-full">
               <thead>
                 <tr>
-                  <th className="fsize13 textwhite  font-300 table-colsm">
+                  <th className="fsize13 textwhite font-300 table-colsm">
                     <p>SectionId</p>
                   </th>
-                  <th className="fsize13 textwhite  font-300 table-collg">
+                  <th className="fsize13 textwhite font-300 table-collg">
                     <p>Image</p>
                   </th>
-                  <th className="fsize13 textwhite  font-300 table-collg">
+                  <th className="fsize13 textwhite font-300 table-collg">
                     <p>Title</p>
                   </th>
-                  <th className="fsize13 textwhite  font-300 table-collg">
+                  <th className="fsize13 textwhite font-300 table-collg">
                     <p>Sub Title</p>
                   </th>
-                  <th className="fsize13 textwhite  font-300 table-collg">
+                  <th className="fsize13 textwhite font-300 table-collg">
                     <p>Description</p>
                   </th>
                   <th className="fsize13 textwhite font-300 table-collg">
@@ -180,10 +180,10 @@ const GalleryTable = () => {
                   <th className="fsize13 textwhite font-300 table-collg">
                     <p>Updated At</p>
                   </th>
-                  <th className="fsize13 textwhite  font-300 table-colsm">
+                  <th className="fsize13 textwhite font-300 table-colsm">
                     <p>Status</p>
                   </th>
-                  <th className="fsize13 textwhite  font-300 table-colsm">
+                  <th className="fsize13 textwhite font-300 table-colsm">
                     <p>Actions</p>
                   </th>
                 </tr>
@@ -191,32 +191,32 @@ const GalleryTable = () => {
               <tbody>
                 {getdata?.map((e) => (
                   <tr>
-                    <td className="fsize13 textforth  font-300 table-colsm">
+                    <td className="fsize13 textgray  font-300 table-colsm">
                       <p>{e.sectionid}</p>
                     </td>
-                    <td className="fsize13 textforth  font-300 table-collg">
+                    <td className="fsize13 textgray  font-300 table-collg">
                       <img
                         src={e.picture}
                         className="table-img"
                         alt="table-img"
                       />
                     </td>
-                    <td className="fsize13 textforth  font-300 table-collg">
+                    <td className="fsize13 textgray font-300 table-collg">
                       <p>{e.title}</p>
                     </td>
-                    <td className="fsize13 textforth  font-300 table-collg">
+                    <td className="fsize13 textgray font-300 table-collg">
                       <p>{e.subtitle}</p>
                     </td>
-                    <td className="fsize13 textforth  font-300 table-collg">
+                    <td className="fsize13 textgray font-300 table-collg">
                       <p>{e.description}</p>
                     </td>
-                    <td className="fsize13 textforth font-300 table-collg">
+                    <td className="fsize13 textgray font-300 table-collg">
                       <p>{new Date(e.createdAt).toDateString()}</p>
                     </td>
-                    <td className="fsize13 textforth font-300 table-collg">
+                    <td className="fsize13 textgray font-300 table-collg">
                       <p>{new Date(e.updatedAt).toDateString()}</p>
                     </td>
-                    <td className="fsize13 textforth  font-300 table-colsm">
+                    <td className="fsize13 textgray font-300 table-colsm">
                       {e.status === true ? (
                         <>
                           <button
@@ -237,7 +237,7 @@ const GalleryTable = () => {
                         </>
                       )}
                     </td>
-                    <td className="fsize13  textforth table-colsm">
+                    <td className="fsize13 textgray table-colsm">
                       <FeatherIcon
                         onClick={() => seteditshow(e)}
                         icon="edit"

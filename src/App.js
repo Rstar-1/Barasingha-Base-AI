@@ -41,7 +41,8 @@ const App = () => {
         <Navbar />
       ) : null}
       <div className="flex bgtertiary h-100 overflow-hidden">
-        {location.pathname === "/admin/dashboard" ? (
+        {location.pathname === "/admin/dashboard" ||
+        location.pathname === "/admin/gallery" ? (
           <div className="w-side md-hidden sm-hidden">
             <Sidebar />
           </div>
@@ -66,9 +67,12 @@ const App = () => {
               : "w-route mlpx9 md-mlpx1 sm-mlpx1 mrpx9 md-mrpx1 sm-mrpx1"
           }
         >
-          {location.pathname === "/automate/dashboard" ? <Header /> : null}
+          {location.pathname === "/automate/dashboard" ||
+          location.pathname === "/admin/gallery" ? (
+            <Header />
+          ) : null}
           {location.pathname === "/admin/dashboard" ? <Header2 /> : null}
-          {location.pathname === "/mine/dashboard" ? <Header2 /> : null}
+          {location.pathname === "/mine/dashboard" ? <Header3 /> : null}
           <Routes>
             <Route path="/" element={<Home />} />
             {/* ======================= Start-Login ======================= */}
@@ -78,8 +82,9 @@ const App = () => {
             {/* ======================= Start-Pages ======================= */}
             <Route path="/home" element={<Home />} />
             <Route path="/admin/dashboard" element={<Dashboard />} />
+            <Route path="/admin/gallery" element={<Gallery />} />
             <Route path="/automate/dashboard" element={<Dashboard2 />} />
-            <Route path="/mine/dashboard" element={<Dashboard2 />} />
+            <Route path="/mine/dashboard" element={<Dashboard3 />} />
             {/*<Route path="/management" element={<Management />} />
             <Route path="/brands" element={<Brands />} />
             <Route path="/clients" element={<Clients />} />

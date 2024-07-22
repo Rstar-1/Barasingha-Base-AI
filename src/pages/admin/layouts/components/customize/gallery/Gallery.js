@@ -1,9 +1,11 @@
 import React from "react";
 import GalleryTable from "./components/GalleryTable";
+import Banner from "../../../../../common/banner/Banner";
 
 const Gallery = () => {
   return (
-    <div className="mtpx9 cust-scroll p20 sm-p15 bgcard rounded-10 sm-rounded-none">
+    <div className="mtpx10 px10 cust-scroll">
+      <Banner title="Gallery" admin="Admin" page="Gallery" />
       <GalleryTable />
     </div>
   );

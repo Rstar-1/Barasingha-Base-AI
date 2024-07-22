@@ -68,7 +68,7 @@ const sidebarmenu = [
       {
         icon: "slack",
         name: "Gallery",
-        route: "AboutUs",
+        route: "/admin/gallery",
       },
       {
         icon: "user-plus",

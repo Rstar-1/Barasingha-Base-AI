@@ -859,6 +859,22 @@ tr:nth-child(even):hover {
 .bordbtn{
   border-radius: 0px 20px 0px 0px !important;
 }
+.bill-progress{
+  width: 70px !important;
+  height: 70px !important;
+}
+.bill .CircularProgressbar .CircularProgressbar-trail {
+  stroke: var(--tertiary) !important;
+}
+.bill .CircularProgressbar .CircularProgressbar-path {
+  stroke: var(--primary) !important;
+}
+.h-cards{
+  height: 120px !important;
+}
+.card-minus{
+  margin-bottom: -12% !important;
+}
 
 /* ======================= End-dashboard ======================= */
 

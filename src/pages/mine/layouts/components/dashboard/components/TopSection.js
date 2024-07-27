@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   CircularProgressbarWithChildren,
   buildStyles,
@@ -12,10 +12,10 @@ const TopSection = () => {
   return (
     <div className="dash">
       <div className="flex w-full">
-        <div className="w-60 bordr">
+        <div className="w-60 bordr py10">
           <div>
             <h4 className="fsize24 textwhite my1">Welcome back, Felecia 👋🏻</h4>
-            <p className="fsize14 textgray font-400 mtpx3 w-60">
+            <p className="fsize14 textgray font-400 mtpx3 w-70">
               In publishing and graphic design, Lorem ipsum is a placeholder
               text commonly used to demonstrate the visual
             </p>
@@ -87,7 +87,7 @@ const TopSection = () => {
               </div>
             </div>
           </div>
-          <div className="w-50 flex justify-center items-center px10">
+          <div className="w-50 flex justify-center items-center pl10">
             <div className="dash-progress relative">
               <CircularProgressbarWithChildren
                 value={percentage}
@@ -114,6 +114,6 @@ const TopSection = () => {
       </div>
     </div>
   );
-}
+};
 
-export default TopSection
+export default TopSection;

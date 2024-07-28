@@ -1,26 +1,10 @@
 import React from "react";
 import ReactPaginate from "react-paginate";
-import FeatherIcon from "feather-icons-react";
 
 const EventCard = () => {
   return (
     <div className="mtpx16">
       <div className="rounded-10 sm-rounded-none">
-          <div className="w-50 my10">
-            <div className="relative">
-              <input
-                className="w-full bgforth textgray h-input fsize14 rounded-5 plpx10 border-0"
-                placeholder="Search"
-              />
-              <div className="absolute top-0 right-0 mtpx9 mrpx2">
-                <FeatherIcon
-                  icon="search"
-                  className="textgray cursor-pointer"
-                  size={20}
-                />
-              </div>
-            </div>
-          </div>
         <div className="rounded-5 sm-rounded-5 mtpx20 md-mtpx16 sm-mtpx14">
           <div className="table-w">
             <table className="w-full">

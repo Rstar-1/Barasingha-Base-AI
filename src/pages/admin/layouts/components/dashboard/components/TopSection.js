@@ -1,12 +1,17 @@
 import React from 'react'
-import { CircularProgressbar } from "react-circular-progressbar";
+import {
+  CircularProgressbar,
+  CircularProgressbarWithChildren,
+  buildStyles,
+} from "react-circular-progressbar";
+import RadialSeparators from "./RadialSeparators";
 import "react-circular-progressbar/dist/styles.css";
 import FeatherIcon from "feather-icons-react";
 
 const TopSection = () => {
-   const percentage = 60;
+   const percentage = 80;
   return (
-    <div className="flex w-full">
+    <div className="flex w-full dash">
       <div className="w-60">
         <div className="relative">
           <div className="h-cards bgsecondary w-full rounded-10"></div>
@@ -76,7 +81,29 @@ const TopSection = () => {
             />
           </div>
           <div className="flex items-center mtpx16">
-            <div className="w-30"></div>
+            <div className="w-30">
+              <div className="dash-progress relative">
+                <CircularProgressbarWithChildren
+                  value={percentage}
+                  strokeWidth={12}
+                  styles={buildStyles({
+                    strokeLinecap: "butt",
+                  })}
+                >
+                  <RadialSeparators
+                    count={30}
+                    style={{
+                      background: "#283144",
+                      width: "3px",
+                      height: `${12}%`,
+                    }}
+                  />
+                </CircularProgressbarWithChildren>
+                <div className="flex items-center justify-center absolute top-0 left-0 dash-progress">
+                  <p className="textwhite fsize18">{`${percentage}`}%</p>
+                </div>
+              </div>
+            </div>
             <div className="w-70">
               <div className="mtpx8 grid-cols-3 gap-10">
                 <div>
@@ -108,7 +135,57 @@ const TopSection = () => {
       </div>
 
       <div className="w-40 plpx12">
-        <div className="bgforth px6 py10 flex items-center justify-between rounded-5">
+        <div className="grid-cols-2 gap-8">
+          <div className="p14 bgforth rounded-5">
+            <div className="bill-progress relative mx-auto my10">
+              <CircularProgressbarWithChildren
+                value={percentage}
+                strokeWidth={12}
+                styles={buildStyles({
+                  strokeLinecap: "butt",
+                })}
+              >
+                <RadialSeparators
+                  count={30}
+                  style={{
+                    background: "#283144",
+                    width: "3px",
+                    height: `${12}%`,
+                  }}
+                />
+              </CircularProgressbarWithChildren>
+              <div className="flex items-center justify-center absolute top-0 left-0 bill-progress">
+                <p className="textwhite fsize18">{`${percentage}`}%</p>
+              </div>
+            </div>
+            <p className="textwhite text-center fsize14">Bill summary</p>
+          </div>
+          <div className="p14 bgforth rounded-5">
+            <div className="bill-progress relative mx-auto my10">
+              <CircularProgressbarWithChildren
+                value={percentage}
+                strokeWidth={12}
+                styles={buildStyles({
+                  strokeLinecap: "butt",
+                })}
+              >
+                <RadialSeparators
+                  count={30}
+                  style={{
+                    background: "#283144",
+                    width: "3px",
+                    height: `${12}%`,
+                  }}
+                />
+              </CircularProgressbarWithChildren>
+              <div className="flex items-center justify-center absolute top-0 left-0 bill-progress">
+                <p className="textwhite fsize18">{`${percentage}`}%</p>
+              </div>
+            </div>
+            <p className="textwhite text-center fsize14">Bill summary</p>
+          </div>
+        </div>
+        <div className="bgforth px6 py10 flex items-center justify-between rounded-5 mtpx10">
           <p className="textwhite fsize16 font-500 mlpx10">Automate API</p>
           <FeatherIcon
             icon="chevron-right"
@@ -116,54 +193,27 @@ const TopSection = () => {
             className="flex textwhite p4 bg-glass2 rounded-full mrpx10"
           />
         </div>
-        <div className="grid-cols-2 gap-8 mtpx10">
-          <div className="p14 bgforth rounded-5">
-            <div className="bill-progress relative mx-auto my20">
-              <CircularProgressbar
-                value={percentage}
-                strokeWidth={10}
-              ></CircularProgressbar>
-              <div className="flex items-center justify-center absolute top-0 left-0 bill-progress">
-                <p className="textwhite fsize14">{`${percentage}`}%</p>
-              </div>
+        <div className="p14 bgforth rounded-5 mtpx10">
+          <h4 className="fsize16 font-400 my1 textwhite">Api Info</h4>
+          <div className="mtpx12 flex flex-wrap">
+            <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+              <p className="fsize12 textprimary">Services</p>
             </div>
-            <p className="textwhite text-center fsize14">Bill summary</p>
-          </div>
-          <div className="p14 bgforth rounded-5">
-            <div className="bill-progress relative mx-auto my20">
-              <CircularProgressbar
-                value={percentage}
-                strokeWidth={10}
-              ></CircularProgressbar>
-              <div className="flex items-center justify-center absolute top-0 left-0 bill-progress">
-                <p className="textwhite fsize14">{`${percentage}`}%</p>
-              </div>
+            <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+              <p className="fsize12 textprimary">Faq</p>
             </div>
-            <p className="textwhite text-center fsize14">Bill summary</p>
-          </div>
-          <div className="p14 bgforth rounded-5">
-            <div className="bill-progress relative mx-auto my20">
-              <CircularProgressbar
-                value={percentage}
-                strokeWidth={10}
-              ></CircularProgressbar>
-              <div className="flex items-center justify-center absolute top-0 left-0 bill-progress">
-                <p className="textwhite fsize14">{`${percentage}`}%</p>
-              </div>
+            <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+              <p className="fsize12 textprimary">Teams</p>
             </div>
-            <p className="textwhite text-center fsize14">Bill summary</p>
-          </div>
-          <div className="p14 bgforth rounded-5">
-            <div className="bill-progress relative mx-auto my20">
-              <CircularProgressbar
-                value={percentage}
-                strokeWidth={10}
-              ></CircularProgressbar>
-              <div className="flex items-center justify-center absolute top-0 left-0 bill-progress">
-                <p className="textwhite fsize14">{`${percentage}`}%</p>
-              </div>
+            <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+              <p className="fsize12 textprimary">Gallery</p>
             </div>
-            <p className="textwhite text-center fsize14">Bill summary</p>
+            <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+              <p className="fsize12 textprimary">Teams</p>
+            </div>
+            <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+              <p className="fsize12 textprimary">Blogs</p>
+            </div>
           </div>
         </div>
       </div>

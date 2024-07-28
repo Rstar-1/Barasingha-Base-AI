@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  CircularProgressbar,
   CircularProgressbarWithChildren,
   buildStyles,
 } from "react-circular-progressbar";
@@ -135,57 +134,7 @@ const TopSection = () => {
       </div>
 
       <div className="w-40 plpx12">
-        <div className="grid-cols-2 gap-8">
-          <div className="p14 bgforth rounded-5">
-            <div className="bill-progress relative mx-auto my10">
-              <CircularProgressbarWithChildren
-                value={percentage}
-                strokeWidth={12}
-                styles={buildStyles({
-                  strokeLinecap: "butt",
-                })}
-              >
-                <RadialSeparators
-                  count={30}
-                  style={{
-                    background: "#283144",
-                    width: "3px",
-                    height: `${12}%`,
-                  }}
-                />
-              </CircularProgressbarWithChildren>
-              <div className="flex items-center justify-center absolute top-0 left-0 bill-progress">
-                <p className="textwhite fsize18">{`${percentage}`}%</p>
-              </div>
-            </div>
-            <p className="textwhite text-center fsize14">Bill summary</p>
-          </div>
-          <div className="p14 bgforth rounded-5">
-            <div className="bill-progress relative mx-auto my10">
-              <CircularProgressbarWithChildren
-                value={percentage}
-                strokeWidth={12}
-                styles={buildStyles({
-                  strokeLinecap: "butt",
-                })}
-              >
-                <RadialSeparators
-                  count={30}
-                  style={{
-                    background: "#283144",
-                    width: "3px",
-                    height: `${12}%`,
-                  }}
-                />
-              </CircularProgressbarWithChildren>
-              <div className="flex items-center justify-center absolute top-0 left-0 bill-progress">
-                <p className="textwhite fsize18">{`${percentage}`}%</p>
-              </div>
-            </div>
-            <p className="textwhite text-center fsize14">Bill summary</p>
-          </div>
-        </div>
-        <div className="bgforth px6 py10 flex items-center justify-between rounded-5 mtpx10">
+        <div className="bgforth px6 py10 flex items-center justify-between rounded-5">
           <p className="textwhite fsize16 font-500 mlpx10">Automate API</p>
           <FeatherIcon
             icon="chevron-right"
@@ -214,6 +163,56 @@ const TopSection = () => {
             <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
               <p className="fsize12 textprimary">Blogs</p>
             </div>
+          </div>
+        </div>
+        <div className="grid-cols-2 gap-8 mtpx10">
+          <div className="p14 bgforth rounded-5">
+            <div className="bill-progress relative mx-auto my10">
+              <CircularProgressbarWithChildren
+                value={percentage}
+                strokeWidth={12}
+                styles={buildStyles({
+                  strokeLinecap: "butt",
+                })}
+              >
+                <RadialSeparators
+                  count={30}
+                  style={{
+                    background: "#283144",
+                    width: "3px",
+                    height: `${12}%`,
+                  }}
+                />
+              </CircularProgressbarWithChildren>
+              <div className="flex items-center justify-center absolute top-0 left-0 bill-progress">
+                <p className="textwhite fsize18">{`${percentage}`}%</p>
+              </div>
+            </div>
+            <p className="textwhite text-center fsize14">Bill summary</p>
+          </div>
+          <div className="p14 bgforth rounded-5">
+            <div className="bill-progress relative mx-auto my10">
+              <CircularProgressbarWithChildren
+                value={percentage}
+                strokeWidth={12}
+                styles={buildStyles({
+                  strokeLinecap: "butt",
+                })}
+              >
+                <RadialSeparators
+                  count={30}
+                  style={{
+                    background: "#283144",
+                    width: "3px",
+                    height: `${12}%`,
+                  }}
+                />
+              </CircularProgressbarWithChildren>
+              <div className="flex items-center justify-center absolute top-0 left-0 bill-progress">
+                <p className="textwhite fsize18">{`${percentage}`}%</p>
+              </div>
+            </div>
+            <p className="textwhite text-center fsize14">Bill summary</p>
           </div>
         </div>
       </div>

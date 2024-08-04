@@ -5,7 +5,7 @@ import RightSide from "./components/RightSide";
 
 const Home = () => {
   return (
-    <div className="h-100 bgtertiary fixed w-full top-0 z-10 home">
+    <div className="h-100 bgsecondary fixed w-full top-0 z-10 home">
       <img
         src="https://html.themeholy.com/haona/demo/assets/img/bg/hero-2-bg-shape.png"
         alt="h-100"

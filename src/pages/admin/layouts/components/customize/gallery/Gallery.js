@@ -4,7 +4,7 @@ import Banner from "../../../../../common/banner/Banner";
 
 const Gallery = () => {
   return (
-    <div className="mtpx10 px10 cust-scroll">
+    <div className="mtpx10 w-route cust-scroll">
       <Banner title="Gallery" admin="Admin" page="Gallery" />
       <GalleryTable />
     </div>

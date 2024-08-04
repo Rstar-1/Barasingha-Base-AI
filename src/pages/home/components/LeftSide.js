@@ -12,7 +12,7 @@ const LeftSide = () => {
     <div className="home">
       <div className="grid-cols-2">
         <div className="flex items-end">
-          <div className="h-pro bgforth flex items-center justify-center rounded-full">
+          <div className="h-pro bgsecondary flex items-center justify-center rounded-full">
             <div className="h-progress relative">
               <CircularProgressbarWithChildren
                 value={percentage}
@@ -35,14 +35,14 @@ const LeftSide = () => {
               </div>
             </div>
           </div>
-          <div className="bgforth plpx30 prpx18 py4 left-minus">
+          <div className="bgsecondary plpx30 prpx18 py4 left-minus">
             <p className="textwhite font-400 fsize14 sm-fsize12 md-fsize14">
               Section
             </p>
           </div>
         </div>
         <div className="flex items-end">
-          <div className="h-pro bgforth flex items-center justify-center rounded-full">
+          <div className="h-pro bgsecondary flex items-center justify-center rounded-full">
             <div className="h-progress relative">
               <CircularProgressbarWithChildren
                 value={percentage}
@@ -65,7 +65,7 @@ const LeftSide = () => {
               </div>
             </div>
           </div>
-          <div className="bgforth plpx30 prpx18 py4 left-minus">
+          <div className="bgsecondary plpx30 prpx18 py4 left-minus">
             <p className="textwhite font-400 fsize14 sm-fsize12 md-fsize14">
               Section
             </p>
@@ -83,7 +83,7 @@ const LeftSide = () => {
         </p>
       </div>
       <div className="mtpx30 grid-cols-2 gap-12">
-        <div className="left-h rounded-5 bgforth w-full">
+        <div className="left-h rounded-5 bgsecondary w-full">
           <div className="px16 py18">
             <h5 className="fsize26 leading textwhite my1">12</h5>
             <div className="flex items-center mtpx10">
@@ -92,7 +92,7 @@ const LeftSide = () => {
             </div>
           </div>
         </div>
-        <div className="left-h rounded-5 bgforth w-full">
+        <div className="left-h rounded-5 bgsecondary w-full">
           <div className="px16 py18">
             <h5 className="fsize26 leading textwhite my1">12</h5>
             <div className="flex items-center mtpx10">

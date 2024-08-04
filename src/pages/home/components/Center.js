@@ -21,8 +21,8 @@ const Center = () => {
         </div>
       </div>
       <div className="w-70 mx-auto bg-bottom relative">
-        <div className="bg-clip bgforth"></div>
-        <p className="textprimary fsize14 text-center absolute bgforth px10 py5 center-absolute">
+        <div className="bg-clip bgsecondary"></div>
+        <p className="textprimary fsize14 text-center absolute bgsecondary px10 py5 center-absolute">
           B A R A S I N G H A
         </p>
       </div>

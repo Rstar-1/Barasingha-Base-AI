@@ -1,114 +1,114 @@
-import React from "react";
-import {
-  CircularProgressbarWithChildren,
-  buildStyles,
-} from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
-import RadialSeparators from "./RadialSeparators";
+import React, {useState} from "react";
 import FeatherIcon from "feather-icons-react";
 
 const TopSection = () => {
+    const [check, setCheck] = useState(1);
+    const pricetab = [
+      {
+        id: 1,
+        name: "Vegis",
+      },
+      {
+        id: 2,
+        name: "New",
+      },
+    ];
   const percentage = 60;
   return (
-    <div className="dash">
-      <div className="flex w-full">
-        <div className="w-60 bordr py10">
-          <div>
-            <h4 className="fsize24 textwhite my1">Welcome back, Felecia 👋🏻</h4>
-            <p className="fsize14 textgray font-400 mtpx3 w-70">
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the visual
-            </p>
-            <div className="grid-cols-3 gap-12 mtpx16">
+    <div className="dash">     
+      <div className="flex items-center">
+        {pricetab.map((e) => (
+          <p
+            onClick={() => setCheck(e.id)}
+            className={
+              check === e.id
+                ? "fsize14 textprimary cursor-pointer px16 pbpx6 tab-primary"
+                : "fsize14 textgray cursor-pointer px16 pbpx6"
+            }
+          >
+            {e.name}
+          </p>
+        ))}
+      </div>
+      <div className="mtpx14">
+        <div className="bginfo rounded-10 py20 w-full relative">
+          <div className="px20">
+            <p className="fsize14 textwhite mbpx8">Total</p>
+            <h3 className="fsize24 textwhite my1 leading">Event Name</h3>
+            <div className="grid-cols-3 gap-8 mtpx26">
+              <div>
+                <h4 className="fsize14 my1 leading textwhite">Start Date</h4>
+                <p className="fsize12 textwhite">12/12/1222</p>
+              </div>
+              <div>
+                <h4 className="fsize14 my1 leading textwhite">End Date</h4>
+                <p className="fsize12 textwhite">12/12/1222</p>
+              </div>
+              <div>
+                <h4 className="fsize14 my1 leading textwhite">Time Period</h4>
+                <p className="fsize12 textwhite">3 Month</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute top-0 right-0 p10">
+            <FeatherIcon icon="settings" size="16" className="textwhite" />
+          </div>
+        </div>
+        <div className="mtpx16 px8">
+          <p className="fsize14 textgray mbpx6">Total</p>
+          <h3 className="fsize24 textwhite my1 leading">2,400</h3>
+          <div className="mtpx20 grid-cols-2 gap-12">
+            <div>
               <div className="flex items-center">
-                <div className="dash-icon bg-glass2 flex items-center justify-center rounded-5">
+                <div className="bg-glass2 p12 rounded-5">
                   <FeatherIcon
-                    icon="grid"
-                    className="textsecondary flex"
-                    size={20}
+                    icon="chevron-up"
+                    className="textsuccess flex"
+                    size="20"
                   />
                 </div>
-                <div className="mlpx12">
-                  <p className="fsize14 font-300 textgray mbpx5">Top Courses</p>
-                  <h6 className="fsize22 font-300 textsecondary my1 leading">
-                    12
-                  </h6>
+                <div className="mlpx8">
+                  <p className="fsize12 font-300 textgray">Progress</p>
+                  <h5 className="fsize14 font-400 textwhite my1 leading">
+                    2,400
+                  </h5>
                 </div>
               </div>
+            </div>
+            <div>
               <div className="flex items-center">
-                <div className="dash-icon bg-glass2 flex items-center justify-center rounded-5">
+                <div className="bg-glass2 p12 rounded-5">
                   <FeatherIcon
-                    icon="grid"
-                    className="textprimary flex"
-                    size={20}
+                    icon="chevron-down"
+                    className="textdanger flex"
+                    size="20"
                   />
                 </div>
-                <div className="mlpx12">
-                  <p className="fsize14 font-300 textgray mbpx5">Top Courses</p>
-                  <h6 className="fsize22 font-300 textprimary my1 leading">
-                    12
-                  </h6>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <div className="dash-icon bg-glass2 flex items-center justify-center rounded-5">
-                  <FeatherIcon
-                    icon="grid"
-                    className="textwarning flex"
-                    size={20}
-                  />
-                </div>
-                <div className="mlpx12">
-                  <p className="fsize14 font-300 textgray mbpx5">Top Courses</p>
-                  <h6 className="fsize22 font-300 textwarning my1 leading">
-                    12
-                  </h6>
+                <div className="mlpx8">
+                  <p className="fsize12 font-300 textgray">Loss</p>
+                  <h5 className="fsize14 font-400 textwhite my1 leading">
+                    2,400
+                  </h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-40 px16 flex items-center">
-          <div className="w-50">
-            <h5 className="fsize20 textwhite my1">Time Spendings</h5>
-            <p className="fsize14 textgray font-400 mtpx3 ">Weekly report</p>
-            <div className="mtpx12 grid-cols-1 gap-10">
-              <div className="flex items-center justify-between">
-                <h6 className="fsize16 textwhite my1">Active</h6>
-                <p className="fsize14 textsuccess bg-light-success font-400 mtpx3 w-max px12">
-                  15%
-                </p>
-              </div>
-              <div className="flex items-center justify-between">
-                <h6 className="fsize16 textwhite my1">Inactive</h6>
-                <p className="fsize14 textdanger bg-light-danger font-400 mtpx3 w-max px12">
-                  15%
-                </p>
-              </div>
-            </div>
+      </div>
+      <div className="mtpx35">
+        <h3 className="fsize16 textgray my1 leading">Mutual Fund</h3>
+        <div className="bgforth px20 py10 flex justify-between items-center rounded-5 mtpx18">
+          <h4 className="fsize14 font-400 textwhite my1">Know More</h4>
+          <div className="flex items-center">
+            <p className="fsize12 textwhite font-400">2000</p>
+            <FeatherIcon icon="eye" size="16" className="textsuccess mlpx8" />
           </div>
-          <div className="w-50 flex justify-center items-center pl10">
-            <div className="dash-progress relative">
-              <CircularProgressbarWithChildren
-                value={percentage}
-                strokeWidth={12}
-                styles={buildStyles({
-                  strokeLinecap: "butt",
-                })}
-              >
-                <RadialSeparators
-                  count={50}
-                  style={{
-                    background: "#242831",
-                    width: "3px",
-                    height: `${12}%`,
-                  }}
-                />
-              </CircularProgressbarWithChildren>
-              <div className="flex items-center justify-center absolute top-0 left-0 dash-progress">
-                <p className="textwhite fsize22">{`${percentage}`}%</p>
-              </div>
-            </div>
+        </div>
+        <div className="bgforth px20 py10 flex justify-between items-center rounded-5 mtpx10">
+          <h4 className="fsize14 font-400 textwhite my1">Know More</h4>
+          <div className="flex items-center">
+            <p className="fsize12 textwhite font-400">2000</p>
+            <FeatherIcon icon="eye" size="16" className="textsuccess mlpx8" />
           </div>
         </div>
       </div>

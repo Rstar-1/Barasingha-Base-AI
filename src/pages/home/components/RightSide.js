@@ -13,12 +13,12 @@ const RightSide = () => {
     <div className="home">
       <div className="grid-cols-2">
         <div className="flex justify-end items-end">
-          <div className="bgforth prpx30 plpx18 py4 right-minus">
+          <div className="bgsecondary prpx30 plpx18 py4 right-minus">
             <p className="textwhite font-400 fsize14 sm-fsize12 md-fsize14">
               Section
             </p>
           </div>
-          <div className="h-pro bgforth flex items-center justify-center rounded-full">
+          <div className="h-pro bgsecondary flex items-center justify-center rounded-full">
             <div className="h-progress relative">
               <CircularProgressbarWithChildren
                 value={percentage}
@@ -43,12 +43,12 @@ const RightSide = () => {
           </div>
         </div>
         <div className="flex justify-end items-end">
-          <div className="bgforth prpx30 plpx18 py4 right-minus">
+          <div className="bgsecondary prpx30 plpx18 py4 right-minus">
             <p className="textwhite font-400 fsize14 sm-fsize12 md-fsize14">
               Section
             </p>
           </div>
-          <div className="h-pro bgforth flex items-center justify-center rounded-full">
+          <div className="h-pro bgsecondary flex items-center justify-center rounded-full">
             <div className="h-progress relative">
               <CircularProgressbarWithChildren
                 value={percentage}
@@ -73,7 +73,7 @@ const RightSide = () => {
           </div>
         </div>
       </div>
-      <div className="mtpx20 px20 py25 bgforth rounded-5">
+      <div className="mtpx20 px20 py25 bgsecondary rounded-5">
         <div className="flex items-center justify-between">
           <div className="flex items-start">
             <div className="home-icon bg-glass2 flex items-center justify-center rounded-5">

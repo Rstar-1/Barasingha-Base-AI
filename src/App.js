@@ -64,14 +64,14 @@ const App = () => {
             location.pathname === "/login" ||
             location.pathname === "/register"
               ? "w-full"
-              : "w-route mlpx9 md-mlpx1 sm-mlpx1 mrpx9 md-mrpx1 sm-mrpx1"
+              : "w-full mx9 md-mx1 sm-mx1 mrpx9 md-mrpx1 sm-mrpx1"
           }
         >
-          {location.pathname === "/automate/dashboard" ||
+          {location.pathname === "/admin/dashboard" ||
           location.pathname === "/admin/gallery" ? (
             <Header />
           ) : null}
-          {location.pathname === "/admin/dashboard" ? <Header2 /> : null}
+          {location.pathname === "/automate/dashboard" ? <Header2 /> : null}
           {location.pathname === "/mine/dashboard" ? <Header3 /> : null}
           <Routes>
             <Route path="/" element={<Home />} />

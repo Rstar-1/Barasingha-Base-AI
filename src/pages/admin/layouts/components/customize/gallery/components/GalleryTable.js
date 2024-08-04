@@ -148,7 +148,7 @@ const GalleryTable = () => {
           <div className="w-40 flex justify-end">
             <button
               onClick={() => setaddshow(true)}
-              className="border-0 cursor-pointer font-700 textdark rounded-5 py8 px18 bgsecondary"
+              className="border-0 cursor-pointer font-700 textdark rounded-5 py8 px18 bgprimary"
             >
               Add
             </button>

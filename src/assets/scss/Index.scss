@@ -1,9 +1,9 @@
 /* ======================= Start-Color ======================= */
 :root {
-  --primary: #7efefe !important;
-  --secondary: #5a8dee !important;
-  --tertiary: #242831 !important;
-  --forth: #283144 !important;
+  --primary: #00e9ea !important;
+  --secondary: #242831 !important;
+  --tertiary: #222c45 !important;
+  --forth: #32425b !important;
   --success: #4bb543 !important;
   --warning: #fdac41d9 !important;
   --danger: #ff5b5c !important;
@@ -585,7 +585,7 @@ p {
 }
 .right-minus {
   margin-right: -18% !important;
-  border-radius: 0px 0px 0px 10px !important;
+  border-radius: 10px 0px 0px 0px !important;
 }
 .home .CircularProgressbar .CircularProgressbar-trail {
   stroke: transparent !important;
@@ -599,7 +599,7 @@ p {
 }
 .bg-clip {
   margin-top: -65% !important;
-  background: var(--forth);
+  background: var(--secondary);
   height: 300px !important;
   clip-path: polygon(
     30% 82%,
@@ -626,16 +626,10 @@ p {
 /* ======================= End-Admin ======================= */
 
 .w-side {
-  width: 17% !important;
+  min-width: 17% !important;
 }
-.w-route {
-  width: 83% !important;
-  @media (max-width: 912px) and (min-width: 641px) {
-    width: 100% !important;
-  }
-  @media (max-width: 640px) {
-    width: 100% !important;
-  }
+.w-route{
+  width:81.5% !important;
 }
 
 /* ======================= End-Admin ======================= */
@@ -663,8 +657,8 @@ p {
   color: var(--white);
 }
 .sidebar .active {
-  color: var(--white);
-  background: var(--secondary);
+  color: var(--dark);
+  background: var(--primary);
 }
 
 /* ======================= End-Sidebar ======================= */
@@ -830,7 +824,7 @@ tr:nth-child(even):hover {
   height: 70px !important;
 }
 .event .CircularProgressbar .CircularProgressbar-trail {
-  stroke: var(--tertiary) !important;
+  stroke: var(--forth) !important;
 }
 .event .CircularProgressbar .CircularProgressbar-path {
   stroke: #7efefe !important;
@@ -858,6 +852,10 @@ tr:nth-child(even):hover {
 }
 .bordbtn{
   border-radius: 0px 20px 0px 0px !important;
+}
+.event-progress{
+  width: 60px !important;
+  height: 60px !important;
 }
 .bill-progress{
   width: 100px !important;

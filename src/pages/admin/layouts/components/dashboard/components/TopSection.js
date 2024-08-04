@@ -13,56 +13,56 @@ const TopSection = () => {
     <div className="flex w-full dash">
       <div className="w-60">
         <div className="relative">
-          <div className="h-cards bgsecondary w-full rounded-10"></div>
+          <div className="h-cards bgprimary w-full rounded-10"></div>
           <div className="absolute center-absolute w-90 mx-auto">
             <div className="grid-cols-3 gap-12 card-minus">
               <div className="bgforth w-full b-shadow rounded-10 py16">
                 <div className="px20">
-                  <h6 className="fsize16 font-400 textwhite my1">Blog</h6>
+                  <h6 className="fsize16 font-400 textwhite my1">CMS</h6>
+                  <div className="mtpx5 flex items-center">
+                    <div className="dot bgprimary rounded-full"></div>
+                    <p className="fsize12 mlpx10 textwhite">Active 12</p>
+                  </div>
                   <div className="mtpx5 flex items-center">
                     <div className="dot bgsuccess rounded-full"></div>
                     <p className="fsize12 mlpx10 textwhite">Active 12</p>
                   </div>
                   <div className="mtpx5 flex items-center">
                     <div className="dot bgdanger rounded-full"></div>
-                    <p className="fsize12 mlpx10 textwhite">Active 12</p>
-                  </div>
-                  <div className="mtpx5 flex items-center">
-                    <div className="dot bgprimary rounded-full"></div>
                     <p className="fsize12 mlpx10 textwhite">Active 12</p>
                   </div>
                 </div>
               </div>
               <div className="bgforth w-full b-shadow rounded-10 py16">
                 <div className="px20">
-                  <h6 className="fsize16 font-400 textwhite my1">Blog</h6>
+                  <h6 className="fsize16 font-400 textwhite my1">Blogs</h6>
+                  <div className="mtpx5 flex items-center">
+                    <div className="dot bgprimary rounded-full"></div>
+                    <p className="fsize12 mlpx10 textwhite">Active 12</p>
+                  </div>
                   <div className="mtpx5 flex items-center">
                     <div className="dot bgsuccess rounded-full"></div>
                     <p className="fsize12 mlpx10 textwhite">Active 12</p>
                   </div>
                   <div className="mtpx5 flex items-center">
                     <div className="dot bgdanger rounded-full"></div>
-                    <p className="fsize12 mlpx10 textwhite">Active 12</p>
-                  </div>
-                  <div className="mtpx5 flex items-center">
-                    <div className="dot bgprimary rounded-full"></div>
                     <p className="fsize12 mlpx10 textwhite">Active 12</p>
                   </div>
                 </div>
               </div>
               <div className="bgforth w-full b-shadow rounded-10 py16">
                 <div className="px20">
-                  <h6 className="fsize16 font-400 textwhite my1">Blog</h6>
+                  <h6 className="fsize16 font-400 textwhite my1">Elearning</h6>
+                  <div className="mtpx5 flex items-center">
+                    <div className="dot bgprimary rounded-full"></div>
+                    <p className="fsize12 mlpx10 textwhite">Active 12</p>
+                  </div>
                   <div className="mtpx5 flex items-center">
                     <div className="dot bgsuccess rounded-full"></div>
                     <p className="fsize12 mlpx10 textwhite">Active 12</p>
                   </div>
                   <div className="mtpx5 flex items-center">
                     <div className="dot bgdanger rounded-full"></div>
-                    <p className="fsize12 mlpx10 textwhite">Active 12</p>
-                  </div>
-                  <div className="mtpx5 flex items-center">
-                    <div className="dot bgprimary rounded-full"></div>
                     <p className="fsize12 mlpx10 textwhite">Active 12</p>
                   </div>
                 </div>
@@ -72,7 +72,7 @@ const TopSection = () => {
         </div>
         <div className="p14 bgforth rounded-5 mtpx65">
           <div className="flex items-center justify-between">
-            <h4 className="fsize16 font-400 my1 textwhite">Campaign</h4>
+            <h4 className="fsize16 font-400 my1 textwhite">Know More</h4>
             <FeatherIcon
               icon="chevron-right"
               size="16"
@@ -92,7 +92,7 @@ const TopSection = () => {
                   <RadialSeparators
                     count={30}
                     style={{
-                      background: "#283144",
+                      background: "#32425b",
                       width: "3px",
                       height: `${12}%`,
                     }}
@@ -104,35 +104,38 @@ const TopSection = () => {
               </div>
             </div>
             <div className="w-70">
-              <div className="mtpx8 grid-cols-3 gap-10">
+              <div className="grid-cols-3 gap-10">
                 <div>
-                  <p className="fsize12 textgray">Status:</p>
-                  <h6 className="fsize14 textsecondary my1 font-400">Live</h6>
+                  <p className="fsize12 textgray">Whatsapp</p>
+                  <p className="fsize12 textprimary font-400">+91 9087654321</p>
                 </div>
                 <div>
-                  <p className="fsize12 textgray">Status:</p>
-                  <h6 className="fsize14 textwarning my1 font-400">Live</h6>
+                  <p className="fsize12 textgray">Facebook</p>
+                  <p className="fsize12 textprimary font-400">
+                    www.Facebook.com
+                  </p>
                 </div>
                 <div>
-                  <p className="fsize12 textgray">Status:</p>
-                  <h6 className="fsize14 textsuccess my1 font-400">Live</h6>
+                  <p className="fsize12 textgray">Instagram:</p>
+                  <p className="fsize12 textprimary font-400">
+                    www.Facebook.com
+                  </p>
                 </div>
               </div>
               <div className="my10 grid-cols-2 gap-10">
                 <div>
-                  <p className="fsize12 textgray">Status:</p>
-                  <h6 className="fsize14 textwhite my1 font-400">Live</h6>
+                  <p className="fsize12 textgray">Start Date:</p>
+                  <p className="fsize12 textwhite font-400">12/12/2022</p>
                 </div>
                 <div>
-                  <p className="fsize12 textgray">Status:</p>
-                  <h6 className="fsize14 textwhite my1 font-400">Live</h6>
+                  <p className="fsize12 textgray">End Date:</p>
+                  <p className="fsize12 textwhite font-400">12/12/2022</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <div className="w-40 plpx12">
         <div className="bgforth px6 py10 flex items-center justify-between rounded-5">
           <p className="textwhite fsize16 font-500 mlpx10">Automate API</p>
@@ -143,7 +146,7 @@ const TopSection = () => {
           />
         </div>
         <div className="p14 bgforth rounded-5 mtpx10">
-          <h4 className="fsize16 font-400 my1 textwhite">Api Info</h4>
+          <h4 className="fsize16 font-400 my1 textwhite">Project API</h4>
           <div className="mtpx12 flex flex-wrap">
             <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
               <p className="fsize12 textprimary">Services</p>
@@ -178,7 +181,7 @@ const TopSection = () => {
                 <RadialSeparators
                   count={30}
                   style={{
-                    background: "#283144",
+                    background: "#32425b",
                     width: "3px",
                     height: `${12}%`,
                   }}
@@ -188,7 +191,7 @@ const TopSection = () => {
                 <p className="textwhite fsize18">{`${percentage}`}%</p>
               </div>
             </div>
-            <p className="textwhite text-center fsize14">Bill summary</p>
+            <p className="textwhite text-center fsize14">Reviews</p>
           </div>
           <div className="p14 bgforth rounded-5">
             <div className="bill-progress relative mx-auto my10">
@@ -202,7 +205,7 @@ const TopSection = () => {
                 <RadialSeparators
                   count={30}
                   style={{
-                    background: "#283144",
+                    background: "#32425b",
                     width: "3px",
                     height: `${12}%`,
                   }}
@@ -212,7 +215,7 @@ const TopSection = () => {
                 <p className="textwhite fsize18">{`${percentage}`}%</p>
               </div>
             </div>
-            <p className="textwhite text-center fsize14">Bill summary</p>
+            <p className="textwhite text-center fsize14">Newsletter</p>
           </div>
         </div>
       </div>

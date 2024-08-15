@@ -101,7 +101,7 @@ const EventCard = () => {
         </div>
       </div>
       <div className="mtpx20">
-        <div className="bordb">
+        <div className="sectionbr">
           <div className="bgprimary w-max px26 py8 bordbtn">
             <p className="fsize14 textdark font-400">Section</p>
           </div>

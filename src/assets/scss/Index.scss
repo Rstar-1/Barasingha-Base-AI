@@ -853,6 +853,9 @@ tr:nth-child(even):hover {
 .bordbtn{
   border-radius: 0px 20px 0px 0px !important;
 }
+.sectionbr {
+  border-bottom: 3px solid var(--primary);
+}
 .event-progress{
   width: 60px !important;
   height: 60px !important;

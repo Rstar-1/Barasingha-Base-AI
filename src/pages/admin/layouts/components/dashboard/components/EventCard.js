@@ -1,54 +1,110 @@
 import React from "react";
+import {
+  CircularProgressbarWithChildren,
+  buildStyles,
+} from "react-circular-progressbar";
+import RadialSeparators from "./RadialSeparators";
+import "react-circular-progressbar/dist/styles.css";
+import FeatherIcon from "feather-icons-react";
 
 const EventCard = () => {
+  const percentage = 80;
   return (
-    <div className="mtpx16 flex">
-      <div className="rounded-10 sm-rounded-none w-60">
-        <div className="rounded-5 sm-rounded-5">
-          <div className="table-w">
-            <table className="w-full">
-              <thead>
-                <tr>
-                  <th className="fsize13 textwhite font-300 table-colsm">
-                    <p>Logo</p>
-                  </th>
-                  <th className="fsize13 textwhite font-300 table-collg">
-                    <p>Project Name</p>
-                  </th>
-                  <th className="fsize13 textwhite font-300 table-collg">
-                    <p>Profit</p>
-                  </th>
-                  <th className="fsize13 textwhite font-300 table-collg">
-                    <p>Expense</p>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="fsize13 textgray  font-300 table-colsm">
-                    <img
-                      src="https://api-dev-minimal-v6.vercel.app/assets/images/avatar/avatar-2.webp"
-                      className="table-img"
-                      alt="table-img"
-                    />
-                  </td>
-                  <td className="fsize13 textgray font-300 table-collg">
-                    <p>e.sectionid</p>
-                  </td>
-                  <td className="fsize13 textgray font-300 table-collg">
-                    <p>e.title</p>
-                  </td>
-                  <td className="fsize13 textgray font-300 table-collg">
-                    <p>e.subtitle</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+    <div className="">
+      <div className="bgforth px6 py10 flex items-center justify-between rounded-5">
+        <p className="textwhite fsize16 font-500 mlpx10">Automate API</p>
+        <FeatherIcon
+          icon="chevron-right"
+          size="18"
+          className="flex textwhite p4 bg-glass2 rounded-full mrpx10"
+        />
+      </div>
+      <div className="grid-cols-2 gap-8 mtpx10">
+        <div className="p14 bgforth rounded-5">
+          <div className="bill-progress relative mx-auto my10">
+            <CircularProgressbarWithChildren
+              value={percentage}
+              strokeWidth={12}
+              styles={buildStyles({
+                strokeLinecap: "butt",
+              })}
+            >
+              <RadialSeparators
+                count={30}
+                style={{
+                  background: "#32425b",
+                  width: "3px",
+                  height: `${12}%`,
+                }}
+              />
+            </CircularProgressbarWithChildren>
+            <div className="flex items-center justify-center absolute top-0 left-0 bill-progress">
+              <p className="textwhite fsize18">{`${percentage}`}%</p>
+            </div>
+          </div>
+          <p className="textwhite text-center fsize14">Reviews</p>
+        </div>
+        <div className="p14 bgforth rounded-5">
+          <div className="bill-progress relative mx-auto my10">
+            <CircularProgressbarWithChildren
+              value={percentage}
+              strokeWidth={12}
+              styles={buildStyles({
+                strokeLinecap: "butt",
+              })}
+            >
+              <RadialSeparators
+                count={30}
+                style={{
+                  background: "#32425b",
+                  width: "3px",
+                  height: `${12}%`,
+                }}
+              />
+            </CircularProgressbarWithChildren>
+            <div className="flex items-center justify-center absolute top-0 left-0 bill-progress">
+              <p className="textwhite fsize18">{`${percentage}`}%</p>
+            </div>
+          </div>
+          <p className="textwhite text-center fsize14">Newsletter</p>
+        </div>
+      </div>
+      <div className="p14 bgforth rounded-5 mtpx10">
+        <h4 className="fsize16 font-400 my1 textwhite">Project API</h4>
+        <div className="mtpx12 flex flex-wrap">
+          <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+            <p className="fsize12 textprimary">Services</p>
+          </div>
+          <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+            <p className="fsize12 textprimary">Faq</p>
+          </div>
+          <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+            <p className="fsize12 textprimary">Teams</p>
+          </div>
+          <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+            <p className="fsize12 textprimary">Gallery</p>
+          </div>
+          <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+            <p className="fsize12 textprimary">Teams</p>
+          </div>
+          <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+            <p className="fsize12 textprimary">Blogs</p>
           </div>
         </div>
       </div>
-      <div className="bgforth p14 rounded-5 mlpx8 w-40">
-
+      <div className="p14 bgforth rounded-5 mtpx10">
+        <h4 className="fsize16 font-400 my1 textwhite">Other API</h4>
+        <div className="mtpx12 flex flex-wrap">
+          <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+            <p className="fsize12 textprimary">Services</p>
+          </div>
+          <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+            <p className="fsize12 textprimary">Faq</p>
+          </div>
+          <div className="px12 mrpx8 mbpx8 py2 rounded-20 bg-light-success">
+            <p className="fsize12 textprimary">Teams</p>
+          </div>
+        </div>
       </div>
     </div>
   );

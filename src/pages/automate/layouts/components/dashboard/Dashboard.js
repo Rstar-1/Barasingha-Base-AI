@@ -4,7 +4,7 @@ import EventCard from "./components/EventCard";
 
 const Dashboard = () => {
   return (
-    <div className="mtpx12 dash-h">
+    <div className="mtpx12 dash-h w-full">
       <TopSection />
       <EventCard />
     </div>

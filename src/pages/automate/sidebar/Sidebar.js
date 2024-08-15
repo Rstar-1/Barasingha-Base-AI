@@ -40,12 +40,12 @@ const Sidebar = () => {
                               </p>
                             </div>
                             <div className="flex items-center gap-4">
-                              <p className="fsize12 dot-dash rounded-full flex items-center justify-center textwhite bgsecondary">
+                              <p className="fsize12 dot-dash rounded-full flex items-center justify-center textdark font-600 bgprimary">
                                 {e.dropdown.length}
                               </p>
                               <FeatherIcon
                                 size="16"
-                                className="textsecondary"
+                                className="textprimary"
                                 icon="chevron-right"
                               />
                             </div>
@@ -61,7 +61,7 @@ const Sidebar = () => {
                                   <FeatherIcon
                                     icon={drop.icon}
                                     className=" cursor-pointer"
-                                    size={15}
+                                    size={12}
                                   />
                                   <p className="fsize13 mtpx2 font-300">
                                     {drop.name}
@@ -85,7 +85,7 @@ const Sidebar = () => {
                           className="cursor-pointer flex"
                           size={16}
                         />
-                        <p className="fsize13 text-side mtpx2 font-300">
+                        <p className="fsize13 text-side mtpx2 font-500">
                           {e.name}
                         </p>
                       </NavLink>

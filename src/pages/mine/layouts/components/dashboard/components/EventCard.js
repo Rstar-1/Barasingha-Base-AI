@@ -64,62 +64,72 @@ const EventCard = () => {
   return (
     <div className="bill">
       <div>
-        <div className="grid-cols-3 gap-12">
-          <div className="bgforth px20 py26 rounded-5">
-            <div className="flex items-center">
-              <div className="event-progress flex items-center justify-center rounded-5">
-                <CircularProgressbar
-                  value={percentageTrue}
-                  text={`${percentageTrue}%`}
-                  strokeWidth={10}
-                ></CircularProgressbar>
-              </div>
-              <div className="mlpx14">
-                <h6 className="fsize22 font-300 textprimary my1 leading">
-                  {totalIconsa}
-                </h6>
-                <p className="fsize14 mtpx4 font-300 textwhite">Top Courses</p>
-              </div>
-            </div>
-          </div>
-          <div className="bgforth px20 py26 rounded-5">
-            <div className="flex items-center">
-              <div className="event-progress flex items-center justify-center rounded-5">
-                <CircularProgressbar
-                  value={percentageFalse}
-                  text={percentageFalse}
-                  strokeWidth={10}
-                ></CircularProgressbar>
-              </div>
-              <div className="mlpx14">
-                <h6 className="fsize22 font-300 textprimary my1 leading">
-                  {totalIconsb}
-                </h6>
-                <p className="fsize14 mtpx4 font-300 textwhite">Top Courses</p>
+        <div className="grid-cols-3 md-grid-cols-2 sm-grid-cols-1 gap-12">
+          <div className="bginfo rounded-10 py26 w-full relative">
+            <div className="px26">
+              <p className="fsize14 textwhite mbpx8">Total</p>
+              <h3 className="fsize24 textwhite my1 leading">Event</h3>
+              <div className="grid-cols-2 gap-8 mtpx26">
+                <div>
+                  <h4 className="fsize14 my1 leading textwhite">Start Date</h4>
+                  <p className="fsize12 textwhite">12/12/1222</p>
+                </div>
+                <div>
+                  <h4 className="fsize14 my1 leading textwhite">End Date</h4>
+                  <p className="fsize12 textwhite">12/12/1222</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="bgforth px20 py26 rounded-5">
-            <div className="flex items-center">
-              <div className="event-progress flex items-center justify-center rounded-5">
-                <CircularProgressbar
-                  value={differenceInAmount}
-                  text={differenceInAmount}
-                  strokeWidth={10}
-                ></CircularProgressbar>
+          <div className="bgforth rounded-10 py26 w-full relative">
+            <div className="px26">
+              <p className="fsize14 textwhite mbpx8">Total</p>
+              <h3 className="fsize24 textwhite my1 leading">Event</h3>
+              <div className="grid-cols-2 gap-8 mtpx26">
+                <div>
+                  <h4 className="fsize14 my1 leading textwhite">Start Date</h4>
+                  <p className="fsize12 textwhite">12/12/1222</p>
+                </div>
+                <div>
+                  <h4 className="fsize14 my1 leading textwhite">End Date</h4>
+                  <p className="fsize12 textwhite">12/12/1222</p>
+                </div>
               </div>
-              <div className="mlpx14">
-                <h6 className="fsize22 font-300 textprimary my1 leading">
-                  {differenceInAmount}
-                </h6>
-                <p className="fsize14 mtpx4 font-300 textwhite">Top Courses</p>
+            </div>
+            <div className="absolute top-0 right-0">
+              <img
+                src="https://atlantis.primereact.org/demo/images/ecommerce-dashboard/value.svg"
+                alt="slide"
+              />
+            </div>
+          </div>
+          <div className="bgforth rounded-10 py26 w-full relative">
+            <div className="px26">
+              <p className="fsize14 textwhite mbpx8">Total</p>
+              <h3 className="fsize24 textwhite my1 leading">Event</h3>
+              <div className="grid-cols-2 gap-8 mtpx26">
+                <div>
+                  <h4 className="fsize14 my1 leading textwhite">Start Date</h4>
+                  <p className="fsize12 textwhite">12/12/1222</p>
+                </div>
+                <div>
+                  <h4 className="fsize14 my1 leading textwhite">End Date</h4>
+                  <p className="fsize12 textwhite">12/12/1222</p>
+                </div>
               </div>
+            </div>
+            <div className="absolute top-0 right-0 ">
+              <img
+                src="https://atlantis.primereact.org/demo/images/ecommerce-dashboard/rate.svg"
+                alt="slide"
+                className=""
+              />
             </div>
           </div>
         </div>
       </div>
       <div className="rounded-5 sm-rounded-5 mtpx20">
-        <div>
+        {/* <div>
           <p className="textwhite">Total Icons: {totalIcons}</p>
           <p className="textwhite">
             Total Icons (when status is true): {totalIconsa}
@@ -127,7 +137,7 @@ const EventCard = () => {
           <p className="textwhite">
             Total Icons (when status is false): {totalIconsb}
           </p>
-        </div>
+        </div> */}
         <div className="table-w">
           <table className="w-full">
             <thead>

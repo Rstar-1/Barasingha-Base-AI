@@ -613,11 +613,11 @@ p {
   );
   width: 100%;
 }
-.home-icon{
+.home-icon {
   width: 40px !important;
   height: 40px !important;
 }
-.left-h{
+.left-h {
   height: 80px !important;
 }
 
@@ -628,8 +628,16 @@ p {
 .w-side {
   min-width: 17% !important;
 }
-.w-route{
-  width:81.5% !important;
+.w-route {
+  width: 81.5% !important;
+  @media (max-width: 912px) and (min-width:641px) {
+    width: 97% !important;
+    padding: 0px 8px;
+  }
+  @media (max-width: 640px) {
+    width: 94% !important;
+    padding: 0px 5px;
+  }
 }
 
 /* ======================= End-Admin ======================= */
@@ -689,7 +697,7 @@ table {
 }
 td {
   border: 1px solid var(--forth);
-  text-align: left; 
+  text-align: left;
   background: var(--tertiary);
   padding: 8px;
 }
@@ -708,6 +716,9 @@ tr:nth-child(even):hover {
 .cust-scroll {
   height: 77vh !important;
   overflow-y: auto !important;
+  @media (max-width: 640px) {
+    height: 88vh !important;
+  }
 }
 .side-input {
   width: 95% !important;
@@ -801,7 +812,7 @@ tr:nth-child(even):hover {
   width: 50px !important;
   height: 50px !important;
 }
-.dash-progress{
+.dash-progress {
   width: 140px !important;
   height: 140px !important;
 }
@@ -819,7 +830,7 @@ tr:nth-child(even):hover {
   height: 230px !important;
   overflow: auto !important;
 }
-.event-progress{
+.event-progress {
   width: 70px !important;
   height: 70px !important;
 }
@@ -850,17 +861,17 @@ tr:nth-child(even):hover {
     height: 40px !important;
   }
 }
-.bordbtn{
+.bordbtn {
   border-radius: 0px 20px 0px 0px !important;
 }
 .sectionbr {
   border-bottom: 3px solid var(--primary);
 }
-.event-progress{
+.event-progress {
   width: 60px !important;
   height: 60px !important;
 }
-.bill-progress{
+.bill-progress {
   width: 100px !important;
   height: 100px !important;
 }
@@ -870,10 +881,10 @@ tr:nth-child(even):hover {
 .bill .CircularProgressbar .CircularProgressbar-path {
   stroke: var(--primary) !important;
 }
-.h-cards{
+.h-cards {
   height: 120px !important;
 }
-.card-minus{
+.card-minus {
   margin-bottom: -12% !important;
 }
 
